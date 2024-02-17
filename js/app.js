@@ -45,3 +45,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 });
+
+document.getElementById('aboutButtonLeftPanel').addEventListener("click", function (){
+  document.getElementById('aboutSection').scrollIntoView({behavior: 'smooth'})
+})
+
+
