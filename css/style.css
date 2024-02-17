@@ -281,8 +281,7 @@ html {
 }
 
 #aboutSection {
-  outline: red 2px dotted;
-  position: absolute;
+  position: relative;
   left: 50%;
   transform: translateX(-50%);
   width: 80%;
@@ -290,21 +289,41 @@ html {
   top: 101vh;
 }
 
+#aboutSectionContainer {
+  position: relative;
+  height: 90%;
+  width: 100%;
+}
 
-#headingAbout{
+#aboutMeHeading{
   font-family: "TikTok Font Bold", serif;
   font-size: 64px;
-  margin-left: 50px;
-  margin-top: 50px;
-  color: #00e0d7; /* Primary color for the text */
+  margin-top: 75px;
+  width: 40%;
+  text-align: left;
+  color: white; /* Primary color for the text */
+  position: relative;
+  padding-left: 10%;
+}
+
+#mySkillsHeading{
+  font-family: "TikTok Font Bold", serif;
+  font-size: 64px;
+  margin-top: -89px;
+  left: 50%;
+  position: relative;
+  width: 40%;
+  text-align: left;
+  padding-left: 10%;
+  color: white; /* Primary color for the text */
 }
 
 #textBoxAbout{
-  outline: blue 2px dotted;
-  height: fit-content;
-  width: 35%;
-  margin-left: 50px;
-  margin-top: 20px;
+  height: 80%;
+  width: 30%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
   position: relative;
   color: white;
   font-family: "TikTok Font Regular", serif;
@@ -312,15 +331,33 @@ html {
   text-align: left;
 }
 
+#textBoxMySkills{
+  height: 80%;
+  width: 30%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  top: -83.71%;
+  left: 50%;
+  position: relative;
+  color: white;
+  font-family: "TikTok Font Regular", serif;
+  font-size: 18px;
+  text-align: left;
+}
 
-
-
-
-
-
-
-
-
+#skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma {
+  background-color: #d5d5d5;
+  color: #333;
+  border: 1px solid #000000;
+  border-radius: 20px; /* Adjust for rounded corners */
+  padding: 15px 25px;
+  display: inline-block;
+  margin: 5px;
+  font-size: 0.9em;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
 
 
 
