@@ -16,6 +16,7 @@ html {
   font-size: 1em;
   line-height: 1.4;
   background-color: #1c1c1c;
+  height: 2000px;
 }
 
 
@@ -37,12 +38,11 @@ html {
 }
 
 #border{
-  outline: blue 2px dotted;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   width: 80%;
-  height: 100%;
+  height: 100vh;
 }
 
 #header1{
@@ -98,7 +98,6 @@ html {
 }
 
 
-
 .bounce {
   animation: bounce 0.5s ease forwards;
 }
@@ -111,6 +110,218 @@ html {
     transform: translateY(-10px);
   }
 }
+
+#leftUpperPanel{
+  background-color: black;
+  position: absolute;
+  height: 25%;
+  width: 10%;
+  top: 0;
+  left: 0;
+}
+
+
+#letter{
+  position: absolute;
+  height: 25%;
+  width: 100%;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 120px; /* Adjust the font size as needed */
+  font-weight: bold; /* Make the text bold */
+  color: #fd3851; /* Primary color for the text */
+  text-shadow: -7px 0px 0px #00dfd8; /* Blue-ish shadow effect to the left */
+  font-family: "TikTok Font Bold", serif;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  z-index: 2;
+}
+
+#text{
+  position: absolute;
+  height: 25%;
+  width: 100%;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "TikTok Font Regular", serif;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  z-index: 2;
+  color: #555555;
+}
+
+
+#leftLowerPanel{
+  background-color: #181818;
+  position: absolute;
+  height: 76%;
+  width: 10%;
+  top: 25%;
+  left: 0;
+}
+#aboutButtonLeftPanel {
+  background-color: transparent;
+  font-family: "TikTok Font Regular", serif;
+  font-size: 18px;
+  box-shadow: none;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  outline: none;
+  text-decoration: none;
+  width: 100%;
+  height: 10%;
+  padding: 0;
+  margin: 0;
+  border-style: solid; /* Explicitly set the border style */
+  border-width: 1px; /* Explicitly set the border width */
+  border-color: #555555; /* Set the border color for all sides */
+  border-left: none; /* Remove left border */
+  border-right: none; /* Remove right border */
+}
+#aboutButtonLeftPanel:hover,
+#aboutButtonLeftPanel:focus,
+#aboutButtonLeftPanel:active {
+  cursor: pointer;
+  outline: none;
+  border-color: #555555; /* Maintain the border color on hover, focus, and active */
+}
+
+#projectsButtonLeftPanel{
+  background-color: transparent;
+  font-family: "TikTok Font Regular", serif;
+  font-size: 18px;
+  box-shadow: none;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  outline: none;
+  text-decoration: none;
+  width: 100%;
+  height: 10%;
+  padding: 0;
+  margin: 0;
+  border-style: solid; /* Explicitly set the border style */
+  border-width: 1px; /* Explicitly set the border width */
+  border-color: #555555; /* Set the border color for all sides */
+  border-left: none; /* Remove left border */
+  border-right: none; /* Remove right border */
+  border-top: none;
+}
+#projectsButtonLeftPanel:hover,
+#projectsButtonLeftPanel:focus,
+#projectsButtonLeftPanel:active {
+  cursor: pointer;
+  outline: none;
+  border-color: #555555; /* Maintain the border color on hover, focus, and active */
+}
+
+
+#contactButtonLeftPanel{
+  background-color: transparent;
+  font-family: "TikTok Font Regular", serif;
+  font-size: 18px;
+  box-shadow: none;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  outline: none;
+  text-decoration: none;
+  width: 100%;
+  height: 10%;
+  padding: 0;
+  margin: 0;
+  border-style: solid; /* Explicitly set the border style */
+  border-width: 1px; /* Explicitly set the border width */
+  border-color: #555555; /* Set the border color for all sides */
+  border-left: none; /* Remove left border */
+  border-right: none; /* Remove right border */
+  border-top: none;
+}
+#contactButtonLeftPanel:hover,
+#contactButtonLeftPanel:focus,
+#contactButtonLeftPanel:active {
+  cursor: pointer;
+  outline: none;
+  border-color: #555555; /* Maintain the border color on hover, focus, and active */
+}
+
+
+#linkedInButton{
+  position: relative;
+  left: 27.5%;
+  top: 2%;
+  width: 30px;
+  height: 30px;
+}
+#gitHubButton{
+  position: relative;
+  left: 40%;
+  top: 2%;
+  width: 30px;
+  height: 30px;
+}
+
+#scrollDown{
+  position: relative;
+  left: -2%;
+  top: 40%;
+  width: fit-content;
+  color: white;
+  font-family: "TikTok Font Regular";
+  font-size: 18px;
+  transform: rotate(90deg);
+}
+
+#aboutSection {
+  outline: red 2px dotted;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 100vh;
+  top: 101vh;
+}
+
+
+#headingAbout{
+  font-family: "TikTok Font Bold", serif;
+  font-size: 64px;
+  margin-left: 50px;
+  margin-top: 50px;
+  color: #00e0d7; /* Primary color for the text */
+}
+
+#textBoxAbout{
+  outline: blue 2px dotted;
+  height: fit-content;
+  width: 35%;
+  margin-left: 50px;
+  margin-top: 20px;
+  position: relative;
+  color: white;
+  font-family: "TikTok Font Regular", serif;
+  font-size: 18px;
+  text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
