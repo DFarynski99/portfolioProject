@@ -50,4 +50,6 @@ document.getElementById('aboutButtonLeftPanel').addEventListener("click", functi
   document.getElementById('aboutSection').scrollIntoView({behavior: 'smooth'})
 })
 
-
+document.getElementById('projectsButtonLeftPanel').addEventListener("click", function (){
+  document.getElementById('projectsSection').scrollIntoView({behavior: 'smooth'})
+});
