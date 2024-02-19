@@ -440,20 +440,91 @@ html {
 #projectsDisplayContainer{
   outline: green 2px dotted;
   position: relative;
-  height: 75%;
+  height: 85%;
   width: 80%;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
 
+
+#projectBoxOne{
+  outline: mistyrose 2px dotted;
+  font-family: "TikTok Font Regular", serif;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  position: relative;
+  height: 48%;
+  width: 45%;
+  left: 0;
+}
+#projectOneVideo{
+  width: 100%;
+  height: 70%;
+  position: relative;
 }
 
 
 
+#projectBoxTwo{
+  outline: red 2px dotted;
+  font-family: "TikTok Font Regular", serif;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  position: relative;
+  height: 48%;
+  width: 45%;
+  margin-left: auto; /* Push the box to the right */
 
 
+}
+#projectTwoVideo{
+  width: 100%;
+  height: 70%;
+  position: relative;
+}
+
+#projectBoxThree{
+  outline: deeppink 2px dotted;
+  font-family: "TikTok Font Regular", serif;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  position: relative;
+  height: 48%;
+  width: 45%;
+  left: 0;
+  margin-top: 30px;
+}
+#projectThreeVideo{
+  width: 100%;
+  height: 70%;
+  position: relative;
+}
 
 
+#projectBoxFour{
+  outline: blueviolet 2px dotted;
+  font-family: "TikTok Font Regular", serif;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  position: relative;
+  height: 48%;
+  width: 45%;
+  left: 0;
+  margin-top: 30px;
+  margin-left: auto; /* Push the box to the right */
+
+}
+#projectFourVideo{
+  width: 100%;
+  height: 70%;
+  position: relative;
+}
 
 
 
