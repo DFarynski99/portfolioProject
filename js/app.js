@@ -53,3 +53,7 @@ document.getElementById('aboutButtonLeftPanel').addEventListener("click", functi
 document.getElementById('projectsButtonLeftPanel').addEventListener("click", function (){
   document.getElementById('projectsSection').scrollIntoView({behavior: 'smooth'})
 });
+
+document.getElementById('contactButtonLeftPanel').addEventListener("click", function (){
+  document.getElementById('contactSection').scrollIntoView({behavior: "smooth"})
+})
