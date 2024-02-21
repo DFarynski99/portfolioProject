@@ -902,7 +902,6 @@ body {
   }
   #border{
     width: 80%;
-    outline: red 2px dotted !important;
     left: 45vw;
 
   }
@@ -1012,7 +1011,6 @@ body {
 
   #aboutSection, #aboutSectionContainer{
     height: 100vh;
-    outline: red 2px dotted !important;
   }
   #aboutSection{
     width: 80vw;
