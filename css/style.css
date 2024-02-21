@@ -768,6 +768,7 @@ body {
   display: flex; /* Make these flex containers as well */
   justify-content: center; /* Center the content inside */
   align-items: center; /* Useful if these had multiple lines of text or content */
+
 }
 
 #gmailContact {
@@ -778,7 +779,7 @@ body {
 #gmailContactUsername {
   font-family: "TikTok Font Regular", serif;
   padding-left: 25px; /* Adjust or remove as necessary for centering */
-  font-size: 32px;
+  font-size: 0.6rem;
   color: white;
 }
 
@@ -885,9 +886,9 @@ body {
 
 
 
-
 @media only screen and (max-width: 500px) {
   /* Styles here will only be applied to screens with a width of 500px or less */
+
 
   html{
     width: 86vw;
@@ -900,7 +901,7 @@ body {
     width: 100%;
   }
   #border{
-    width: 80%;
+    width: 100%;
     left: 43vw;
 
   }
@@ -1083,7 +1084,8 @@ body {
 
 
   #footer{
-    width: 100vw !important;
+    width: 80vw !important;
+    display: none;
   }
 
   /* Add other styles as needed */
