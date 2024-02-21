@@ -944,6 +944,9 @@ body {
   #header1, #header2, #header3, .red, #danielText{
     font-size: 4rem;
   }
+  .red {
+    text-shadow: -5px 0 0 #00dfd8; /* Blue-ish shadow effect to the left */
+  }
   #header1{
     top: 10vh;
     position: relative;
@@ -1006,11 +1009,11 @@ body {
 
 
   #aboutSection, #aboutSectionContainer{
-    height: 90vh;
+    height: 100vh;
   }
   #aboutSection{
     width: 80vw;
-    left: 50vw;
+    left: 53vw;
   }
   #aboutMeHeading, #mySkillsHeading{
     width: 50%;
@@ -1044,22 +1047,24 @@ body {
     font-size: 0.85rem;
     text-align: center;
     padding-top: 50px !important;
+    padding-right: 15px !important;
   }
   #textBoxMySkills{
     left: 32vw;
     position: absolute;
     top: 10vh;
     padding-top: 50px !important;
+    padding-left: 15px !important;
   }
   #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping, #skillReCaptchaAutomation, #skillIFTTTWebhook {
     background-color: #d5d5d5;
     color: #333;
     border: 1px solid #000000;
-    border-radius: 20px; /* Adjust for rounded corners */
+    border-radius: 15px; /* Adjust for rounded corners */
     padding: 5px 15px;
     display: inline-block;
     margin: 3px;
-    font-size: 1em;
+    font-size: 0.65em;
     text-align: center;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 
