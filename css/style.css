@@ -907,7 +907,6 @@ body {
   *{
     outline: none !important;
   }
-
   #runningWritingHeadClose{
     margin-left: 3vw;
     top: 3vh;
@@ -918,42 +917,49 @@ body {
   }
   #runningWritingH1Open{
     margin-left: 3vw;
-    top: 14vh;
+    top: 11vh;
   }
   #runningWritingH1Close{
     left: 65vw;
     top: 14vh;
   }
   #runningWritingPOpen{
-    margin-left: 3vw;
-    top: 16.5vh;
+    margin-left: 10vw;
+    top: 15vh;
   }
   #runningWritingPClose{
-    margin-left: 3vw;
-    top: 19.5vh;
+    margin-left: 10vw;
+    top: 17vh;
   }
+
   #paraOne{
+    margin-left: 10vw;
     font-size: 1.25rem;
-    top: 18vh;
+    top: 16vh;
   }
   #scrollDown{
-    margin-left: -9vw;
-    top: 26.5vh;
+    margin-left: -7vw;
+    top: 8vh;
   }
   #header1, #header2, #header3, .red, #danielText{
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
   #header1{
-    top: 14vh;
+    top: 10vh;
     position: relative;
+    margin-left: 5vw;
   }
   #header2{
-    top: 16vh;
+    top: 12vh;
     position: relative;
+    width: 150%;
+    margin-left: 5vw;
   }
   #header3{
-    top: 18vh;
+    top: 15vh;
     position: relative;
+    margin-left: 5vw;
+    line-height: 60px;
   }
   #leftUpperPanel, #leftLowerPanel, #letter, #text{
     display: none;
@@ -967,14 +973,6 @@ body {
     width: 10vw;
     height: 100vh;
     background-color: #181818;
-  }
-  .hiddenLeftPanel500px{
-    height: inherit;
-    width: 80vw;
-    background-color: brown;
-    position: absolute;
-    z-index: 3;
-    display: none;
   }
   #hamburgerMenu500px{
     top: 6vh;
@@ -992,7 +990,14 @@ body {
     border-left: none; /* Remove left border */
     border-right: none; /* Remove right border */
     z-index: 4;
-
+  }
+  .hiddenLeftPanel500px{
+    height: inherit;
+    width: 80vw;
+    background-color: brown;
+    position: absolute;
+    z-index: 3;
+    display: none;
   }
   #hamburgerMenu500pxImage{
     height: 2vh;
