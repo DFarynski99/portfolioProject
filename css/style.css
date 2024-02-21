@@ -930,12 +930,13 @@ body {
   }
   #runningWritingPClose{
     margin-left: 10vw;
-    top: 17vh;
+    top: 16vh;
   }
 
   #paraOne{
     margin-left: 10vw;
-    font-size: 1.25rem;
+    font-size: 1rem;
+    width: 95%;
     top: 16vh;
   }
   #scrollDown{
@@ -1014,7 +1015,7 @@ body {
   }
   #aboutSection{
     width: 80vw;
-    left: 55vw;
+    left: 61.25vw;
   }
   #aboutMeHeading, #mySkillsHeading{
     width: 50%;
@@ -1041,11 +1042,12 @@ body {
   }
 
   #textBoxAbout{
-    left: 0;
+    left: -5%;
     margin-left: 0 !important;
     position: absolute;
     top: 10vh;
-    font-size: 0.85rem;
+    width: 60% !important;
+    font-size: 0.75rem;
     text-align: center;
     padding-top: 50px !important;
     padding-right: 15px !important;
@@ -1062,10 +1064,10 @@ body {
     color: #333;
     border: 1px solid #000000;
     border-radius: 15px; /* Adjust for rounded corners */
-    padding: 5px 15px;
+    padding: 6px 6px;
     display: inline-block;
     margin: 3px;
-    font-size: 0.65em;
+    font-size: 0.6em;
     text-align: center;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 
@@ -1080,7 +1082,7 @@ body {
 
 
   #footer{
-    width: 100vw;
+    width: 100vw !important;
   }
 
   /* Add other styles as needed */
