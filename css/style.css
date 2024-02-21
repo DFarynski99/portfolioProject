@@ -902,6 +902,8 @@ body {
   }
   #border{
     width: 80%;
+    outline: red 2px dotted !important;
+    left: 45vw;
 
   }
   *{
@@ -938,7 +940,7 @@ body {
     top: 16vh;
   }
   #scrollDown{
-    margin-left: -7vw;
+    margin-left: -10vw;
     top: 8vh;
   }
   #header1, #header2, #header3, .red, #danielText{
@@ -1010,10 +1012,11 @@ body {
 
   #aboutSection, #aboutSectionContainer{
     height: 100vh;
+    outline: red 2px dotted !important;
   }
   #aboutSection{
     width: 80vw;
-    left: 53vw;
+    left: 55vw;
   }
   #aboutMeHeading, #mySkillsHeading{
     width: 50%;
