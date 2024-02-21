@@ -57,3 +57,27 @@ document.getElementById('projectsButtonLeftPanel').addEventListener("click", fun
 document.getElementById('contactButtonLeftPanel').addEventListener("click", function (){
   document.getElementById('contactSection').scrollIntoView({behavior: "smooth"})
 })
+
+
+document.getElementById('aboutFooterButton').addEventListener("click", function (){
+  document.getElementById('aboutSection').scrollIntoView({behavior: 'smooth'})
+})
+
+document.getElementById('projectsFooterButton').addEventListener("click", function (){
+  document.getElementById('projectsSection').scrollIntoView({behavior: 'smooth'})
+});
+
+document.getElementById('contactFooterButton').addEventListener("click", function (){
+  document.getElementById('contactSection').scrollIntoView({behavior: "smooth"})
+})
+
+
+document.getElementById('hamburgerMenu500px').addEventListener("click", function () {
+  var hiddenLeftPanels = document.getElementsByClassName('hiddenLeftPanel500px');
+  Array.from(hiddenLeftPanels).forEach(function(panel) {
+    // Toggle display style between 'block' and 'none'
+    panel.style.display = panel.style.display === "block" ? "none" : "block";
+  });
+});
+
+
