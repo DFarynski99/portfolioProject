@@ -881,7 +881,7 @@ body {
   font-size: 16px;
 }
 *{
-  outline: none !important;
+  outline: red 1px dotted !important;
 }
 
 
@@ -896,7 +896,10 @@ body {
   html{
     width: 86vw;
   }
-
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
   #heroshot{
     width: 100%;
   }
@@ -906,7 +909,7 @@ body {
 
   }
   *{
-    outline: none !important;
+    outline: red 1px dotted !important;
   }
   #runningWritingHeadClose{
     margin-left: 3vw;
