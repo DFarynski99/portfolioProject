@@ -1005,6 +1005,71 @@ body {
   }
 
 
+  #aboutSection, #aboutSectionContainer{
+    height: 90vh;
+  }
+  #aboutSection{
+    width: 80vw;
+    left: 50vw;
+  }
+  #aboutMeHeading, #mySkillsHeading{
+    width: 50%;
+  }
+  #aboutMeHeading{
+    left: 0;
+    margin-left: 0 !important;
+    position: absolute;
+    top: 0;
+    font-size: 2rem;
+
+  }
+  #mySkillsHeading{
+    left: 50%;
+    position: absolute;
+    top: 0;
+    font-size: 2rem;
+  }
+
+
+  #textBoxAbout, #textBoxMySkills {
+    width: 50%;
+    height: fit-content;
+  }
+
+  #textBoxAbout{
+    left: 0;
+    margin-left: 0 !important;
+    position: absolute;
+    top: 10vh;
+    font-size: 0.85rem;
+    text-align: center;
+    padding-top: 50px !important;
+  }
+  #textBoxMySkills{
+    left: 32vw;
+    position: absolute;
+    top: 10vh;
+    padding-top: 50px !important;
+  }
+  #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping, #skillReCaptchaAutomation, #skillIFTTTWebhook {
+    background-color: #d5d5d5;
+    color: #333;
+    border: 1px solid #000000;
+    border-radius: 20px; /* Adjust for rounded corners */
+    padding: 5px 15px;
+    display: inline-block;
+    margin: 3px;
+    font-size: 1em;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+
+  }
+
+
+
+
+
+
 
 
 
