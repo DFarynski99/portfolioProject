@@ -889,7 +889,6 @@ body {
 @media only screen and (max-width: 500px) {
   /* Styles here will only be applied to screens with a width of 500px or less */
 
-
   html{
     width: 86vw;
   }
@@ -902,8 +901,8 @@ body {
   }
   #border{
     width: 100%;
-    left: 43vw;
-
+    left: 54vw;
+    outline: deeppink 2px dotted !important;
   }
   #runningWritingHeadClose{
     margin-left: 3vw;
@@ -1010,9 +1009,10 @@ body {
   }
 
   #aboutSection{
-    width: 80%;
-    left: 50%;
+    width: 93%;
+    left: 59%;
     height: 100vh;
+    outline: red 2px dotted !important;
   }
   #aboutSectionContainer{
     width: 99%;
@@ -1036,13 +1036,10 @@ body {
     width: 50%;
     font-size: 2rem;
   }
-
-
   #textBoxAbout, #textBoxMySkills {
     width: 50%;
     height: fit-content;
   }
-
   #textBoxAbout{
     left: 0;
     margin-left: 0 !important;
@@ -1074,6 +1071,74 @@ body {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 
   }
+
+
+
+
+  #projectsSection{
+    width: 93%;
+    left: 59%;
+    height: 100vh;
+  }
+  #projectsHeading{
+    font-size: 2rem;
+  }
+
+  #projectsDisplayContainer{
+    width: 100%;
+  }
+  #projectBoxOne, #projectBoxTwo, #projectBoxThree, #projectBoxFour{
+    width: 50%;
+  }
+  #projectOneVideo, #projectTwoVideo, #projectThreeVideo, #projectFourVideo{
+    height: 50%;
+    width: 95%;
+  }
+  #projectBoxOneHead, #projectBoxTwoHead{
+    top: 51%;
+    font-size: 0.8em;
+  }
+  #projectBoxThreeHead, #projectBoxFourHead{
+    top: 51%;
+    font-size: 0.8em;
+  }
+  #projectBoxOneDescription, #projectBoxTwoDescription, #projectBoxThreeDescription, #projectBoxFourDescription{
+    top: 56%;
+    font-size: 0.70em;
+    height: fit-content;
+  }
+  #projectOneGithub, #projectTwoGithub, #projectThreeGithub{
+    width: 100%;
+    height: fit-content;
+    font-size: 0.70em;
+  }
+  #projectThreeGithub{
+    top: 90%;
+  }
+  #projectTwoGithub, #projectFourGithub{
+    width: 50%;
+    height: fit-content;
+    font-size: 0.70em;
+    position: absolute;
+    left: 1%;
+    transform: translateX(-1%);
+  }
+  #projectTwoWebsite, #projectFourWebsite {
+    width: 50%;
+    height: fit-content;
+    font-size: 0.70em;
+    position: absolute;
+    left: 100%;
+    transform: translateX(-100%);
+  }
+
+
+
+
+
+
+
+
 
 
 
