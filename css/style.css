@@ -16,7 +16,7 @@ html {
   font-size: 1em;
   line-height: 1.4;
   background-color: #1c1c1c;
-  height: 3950px;
+  height: 3590px;
 }
 
 #leftPanel500pxClosed{
@@ -724,7 +724,7 @@ body {
 #githubContactUsername {
   font-family: "TikTok Font Regular", serif;
   padding-left: 25px; /* Adjust or remove as necessary for centering */
-  font-size: 32px;
+  font-size: 1.25rem;
   color: white;
 }
 #runningWritingClickMeOpenOne{
@@ -779,8 +779,8 @@ body {
 #gmailContactUsername {
   font-family: "TikTok Font Regular", serif;
   padding-left: 25px; /* Adjust or remove as necessary for centering */
-  font-size: 0.6rem;
   color: white;
+  font-size: 1.25rem;
 }
 
 
@@ -809,7 +809,7 @@ body {
 #linkedInContactUsername {
   font-family: "TikTok Font Regular", serif;
   padding-left: 25px; /* Adjust or remove as necessary for centering */
-  font-size: 32px;
+  font-size: 1.25rem;
   color: white;
 }
 
@@ -1079,9 +1079,12 @@ body {
     width: 93%;
     left: 59%;
     height: 100vh;
+    outline: blue 2px dotted !important;
   }
   #projectsHeading{
     font-size: 2rem;
+    outline: yellow 2px dotted !important;
+
   }
 
   #projectsDisplayContainer{
@@ -1133,24 +1136,77 @@ body {
   }
 
 
+  #contactSection{
+    outline: blue 1px dotted !important;
+    width: 93%;
+    left: 59%;
+    height: 75vh;
+  }
+  #contactContainer{
+    outline: red 1px dotted !important;
+    width: 100%;
+  }
+  #contactHeading{
+    outline: greenyellow 1px dotted !important;
+    font-size: 2rem;
+    height: fit-content;
+    padding-bottom: 50px;
+    top: -7.5%;
+    padding-top: 0;
+  }
+
+  #contactCardOne, #contactCardTwo, #contactCardThree{
+    outline: green 2px dotted !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+  }
+
+  #gmailContactUsername, #githubContactUsername, #linkedInContactUsername{
+    font-size: 1rem;
+    outline: aquamarine 1px dotted !important ;
+  }
 
 
+  #githubContact, #gmailContact, #linkedInContact{
+    outline: chocolate 2px dotted !important;
+    width: 32px;
+    height: auto;
+  }
 
 
+  #runningWritingClickMeOpenOne{
+    font-size: 1.25rem;
+    left: 12%;
+    top: 2.75%;
+    outline: aquamarine 1px dotted !important;
 
-
-
-
-
-
+  }
+  #runningWritingClickMeCloseOne{
+    font-size: 1.25rem;
+    top: 51%;
+    left: 75%;
+    outline: aquamarine 1px dotted !important;
+  }
 
 
 
 
 
   #footer{
-    width: 80vw !important;
-    display: none;
+    width: 100vw !important;
+    outline: deeppink 3px dotted !important;
+    height: 25%;
+
+
+
+  }
+
+  #footerContainer{
+    outline: darkgreen 2px dotted !important;
+    height: 10%;
+    width: 100%;
   }
 
   /* Add other styles as needed */
