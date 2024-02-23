@@ -1156,7 +1156,6 @@ body {
   }
 
   #contactCardOne, #contactCardTwo, #contactCardThree{
-    outline: green 2px dotted !important;
     display: flex;
     flex-direction: row;
     justify-content: center; /* Center items horizontally */
@@ -1165,12 +1164,10 @@ body {
 
   #gmailContactUsername, #githubContactUsername, #linkedInContactUsername{
     font-size: 1rem;
-    outline: aquamarine 1px dotted !important ;
   }
 
 
   #githubContact, #gmailContact, #linkedInContact{
-    outline: chocolate 2px dotted !important;
     width: 32px;
     height: auto;
   }
