@@ -75,9 +75,22 @@ document.getElementById('contactFooterButton').addEventListener("click", functio
 document.getElementById('hamburgerMenu500px').addEventListener("click", function () {
   var hiddenLeftPanels = document.getElementsByClassName('hiddenLeftPanel500px');
   Array.from(hiddenLeftPanels).forEach(function(panel) {
-    // Toggle display style between 'block' and 'none'
-    panel.style.display = panel.style.display === "block" ? "none" : "block";
+    // Toggle the 'visible' class
+    if (panel.classList.contains('visible')) {
+      panel.classList.remove('visible');
+    } else {
+      panel.classList.add('visible');
+    }
   });
 });
 
 
+document.getElementById('aboutButtonLeftPanelHidden').addEventListener("click", function(){
+  document.getElementById('aboutSection').scrollIntoView({behavior: "smooth"})
+})
+document.getElementById('projectsButtonLeftPanelHidden').addEventListener("click", function(){
+  document.getElementById('projectsSection').scrollIntoView({behavior: "smooth"})
+})
+document.getElementById('contactButtonLeftPanelHidden').addEventListener("click", function(){
+  document.getElementById('contactSection').scrollIntoView({behavior: "smooth"})
+})
