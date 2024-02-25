@@ -679,7 +679,6 @@ body {
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
-
 }
 
 #contactHeading{
@@ -871,18 +870,22 @@ body {
 
 #createdByFooter{
   font-family: "TikTok Font Regular", serif;
-  width: fit-content;
   top: 25%;
-  position: relative;
-  height: fit-content;
-  color: #888888;
   font-size: 0.75em;
   padding-top: 5px;
-  text-align: center;
-  align-content: center;
-  align-items: center;
+  padding-bottom: 10px;
 }
 
+#quoteFooter, #createdByFooter{
+  color: #888888;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  height: fit-content;
+  text-align: center;
+  align-content: center;
+  padding-top: 25px;
+}
 
 
 
@@ -894,6 +897,7 @@ body {
 
   html{
     width: 86vw;
+    height: fit-content;
   }
   html, body {
     margin: 0;
@@ -1201,7 +1205,7 @@ body {
     outline: blue 1px dotted !important;
     width: 93%;
     left: 59%;
-    height: 100vh;
+    height: 110vh;
   }
   #contactContainer{
     outline: red 1px dotted !important;
@@ -1250,7 +1254,7 @@ body {
 
   #footerTest{
     width: 100vw;
-    height: 475px;
+    height: 50vh !important;
     position: relative;
   }
   #footerContainer{
@@ -1258,11 +1262,13 @@ body {
     width: 100%;
     padding: 0 !important;
     padding-top: 2px !important;
+    position: relative;
+    top: -20%;
+    background-color: #181818;
   }
   #aboutFooterButton, #projectsFooterButton, #contactFooterButton{
     height: fit-content;
     font-size: 1em;
-
   }
   #quoteFooter, #createdByFooter{
     left: 50%;
@@ -1272,12 +1278,78 @@ body {
     padding-top: 0 !important;
     text-align: center;
     align-content: center;
+  }
 
+}
+
+@media only screen and (max-width: 421px) {
+
+  #projectsSection{
+    height: 120vh;
+    outline: yellow 5px dotted !important;
+
+  }
+  #footerTest{
+    height: 220px !important;
+  }
+  #aboutFooterButton, #projectsFooterButton, #contactFooterButton{
+    outline: green 2px dotted !important;
+  }
+  #createdByFooter{
+    outline: hotpink 2px dotted !important;
+    position: relative;
+    height: fit-content;
+    padding-top: 0 !important;
+    text-align: center;
+    align-content: center;
+    left: 12.5%;
+    top: 110%;
   }
 
 
-  /* Add other styles as needed */
+  #projectBoxOne, #projectBoxTwo, #projectBoxThree, #projectBoxFour{
+    outline: hotpink 2px dotted !important;
+    height: 57%;
+  }
+  #projectBoxOneHead{
+    outline: azure 2px dotted !important;
+  }
+
+  #projectBoxOneDescription, #projectBoxTwoDescription{
+    outline: blue 2px dotted !important;
+    top: 57%;
+
+  }
+  #projectOneGithub{
+    outline: palegreen 2px dotted !important;
+    width: 100%;
+    height: fit-content;
+    font-size: 0.70em;
+    top: 95%;
+  }
+  #projectTwoGithub, #projectTwoWebsite{
+    top: 95%;
+    outline: greenyellow 2px dotted !important;
+  }
+  #projectThreeVideo, #projectFourVideo{
+    top: 0;
+  }
+  #projectThreeGithub{
+    top: 93%;
+    outline: greenyellow 2px dotted !important;
+  }
+  #projectFourWebsite, #projectFourGithub{
+    top: 93%;
+    outline: greenyellow 2px dotted !important;
+  }
+
+
+
+
+
+
 }
+
 
 
 
