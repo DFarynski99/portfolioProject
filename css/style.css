@@ -835,7 +835,7 @@ body {
   margin-top: 15px;
   background-color: transparent;
   font-family: "TikTok Font Regular", serif;
-  font-size: 18px;
+  font-size: 1em;
   box-shadow: none;
   position: relative;
   left: 50%;
@@ -854,29 +854,12 @@ body {
 }
 
 
-#quoteFooter{
-  font-family: "TikTok Font Regular", serif;
-  width: fit-content;
-  top: 15%;
-  position: relative;
-  height: fit-content;
-  color: #888888;
-  font-size: 0.75em;
-  text-align: center;
-  align-content: center;
-  align-items: center;
-  padding-top: 10px;
-}
-
 #createdByFooter{
   font-family: "TikTok Font Regular", serif;
   top: 25%;
   font-size: 0.75em;
   padding-top: 5px;
   padding-bottom: 10px;
-}
-
-#quoteFooter, #createdByFooter{
   color: #888888;
   left: 50%;
   transform: translateX(-50%);
@@ -884,16 +867,182 @@ body {
   height: fit-content;
   text-align: center;
   align-content: center;
-  padding-top: 25px;
+}
+
+
+@media only screen and (max-width: 375px) {
+
+  #projectsSection{
+    height: 120vh;
+    outline: yellow 5px dotted !important;
+  }
+  #footerTest{
+    height: 220px !important;
+  }
+  #aboutFooterButton, #projectsFooterButton, #contactFooterButton{
+    outline: green 2px dotted !important;
+  }
+  #createdByFooter{
+    outline: hotpink 2px dotted !important;
+    position: relative;
+    height: fit-content;
+    padding-top: 0 !important;
+    text-align: center;
+    align-content: center;
+    left: 12.5%;
+    top: 110%;
+  }
+
+
+  #projectBoxOne, #projectBoxTwo, #projectBoxThree, #projectBoxFour{
+    outline: hotpink 2px dotted !important;
+    height: 57%;
+  }
+  #projectBoxOneHead{
+    outline: azure 2px dotted !important;
+  }
+
+  #projectBoxOneDescription, #projectBoxTwoDescription{
+    outline: blue 2px dotted !important;
+    top: 57%;
+
+  }
+  #projectOneGithub{
+    outline: palegreen 2px dotted !important;
+    width: 100%;
+    height: fit-content;
+    font-size: 0.70em;
+    top: 95%;
+  }
+  #projectTwoGithub, #projectTwoWebsite{
+    top: 95%;
+    outline: greenyellow 2px dotted !important;
+  }
+  #projectThreeVideo, #projectFourVideo{
+    top: 0;
+  }
+  #projectThreeGithub{
+    top: 93%;
+    outline: greenyellow 2px dotted !important;
+  }
+  #projectFourWebsite, #projectFourGithub{
+    top: 93%;
+    outline: greenyellow 2px dotted !important;
+  }
+
+  #leftUpperPanel, #leftLowerPanel, #letter, #text{
+    display: none;
+  }
+  #leftPanel500pxClosed{
+    display: block;
+    outline: yellow 2px dotted;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10vw;
+    height: 100vh;
+    background-color: #181818;
+  }
+  #hamburgerMenu500px{
+    top: 6vh;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    background-color: transparent;
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+    border-style: solid; /* Explicitly set the border style */
+    border-width: 0; /* Explicitly set the border width */
+    border-left: none; /* Remove left border */
+    border-right: none; /* Remove right border */
+    z-index: 4;
+  }
+  .hiddenLeftPanel500px{
+    height: inherit;
+    width: 80vw;
+    background-color: #181818;
+    position: absolute;
+    z-index: 3;
+    transform: translateX(-100%); /* Hide it off-screen to the left */
+    opacity: 0; /* Start with it being invisible */
+    transition: opacity 0.5s, transform 0.5s; /* Animate both opacity and transform */
+  }
+  .hiddenLeftPanel500px.visible {
+    transform: translateX(0); /* Move into view */
+    opacity: 1; /* Make it fully visible */
+  }
+  #aboutButtonLeftPanelHidden, #projectsButtonLeftPanelHidden, #contactButtonLeftPanelHidden{
+    background-color: transparent;
+    font-family: "TikTok Font Regular", serif;
+    font-size: 18px;
+    box-shadow: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15%;
+    color: white;
+    outline: none;
+    text-decoration: none;
+    width: 100%;
+    height: 10%;
+    padding: 0;
+    margin: 0;
+    border-style: solid; /* Explicitly set the border style */
+    border-width: 1px; /* Explicitly set the border width */
+    border-color: #555555; /* Set the border color for all sides */
+    border-left: none; /* Remove left border */
+    border-right: none; /* Remove right border */
+    border-bottom: none;
+  }
+  #contactButtonLeftPanelHidden{
+    padding: 0;
+    margin: 0;
+    border-style: solid; /* Explicitly set the border style */
+    border-width: 1px; /* Explicitly set the border width */
+    border-color: #555555; /* Set the border color for all sides */
+    border-left: none; /* Remove left border */
+    border-right: none; /* Remove right border */
+  }
+  #aboutButtonLeftPanelHidden:hover,
+  #aboutButtonLeftPanelHidden:focus,
+  #aboutButtonLeftPanelHidden:active,
+  #projectsButtonLeftPanelHidden:hover,
+  #projectsButtonLeftPanelHidden:focus,
+  #projectsButtonLeftPanelHidden:active,
+  #contactButtonLeftPanelHidden:hover,
+  #contactButtonLeftPanelHidden:focus,
+  #contactButtonLeftPanelHidden:active{
+    cursor: pointer;
+    outline: none;
+    border-color: #555555; /* Maintain the border color on hover, focus, and active */
+  }
+  #hamburgerMenu500pxImage{
+    height: 2vh;
+    width: 6vw;
+  }
 }
 
 
 
 
 
-
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 375px) and (max-width: 500px) {
   /* Styles here will only be applied to screens with a width of 500px or less */
+
+  #projectBoxOne, #projectBoxTwo {
+    outline: yellow 2px dotted !important;
+    height: 37.5%;
+  }
+  #projectBoxThree, #projectBoxFour{
+    outline: yellow 2px dotted !important;
+    height: 37.5%;
+  }
+  #projectsSection{
+    outline: red 5px dotted !important;
+  }
 
   html{
     width: 86vw;
@@ -1140,20 +1289,23 @@ body {
   #projectsSection{
     width: 93%;
     left: 59%;
-    height: 100vh;
-    outline: blue 2px dotted !important;
+    height: 150vh !important;
+    outline: red 5px dotted !important;
   }
   #projectsHeading{
     font-size: 2rem;
     outline: yellow 2px dotted !important;
     padding-bottom: 30px;
   }
-
   #projectsDisplayContainer{
     width: 100%;
   }
   #projectBoxOne, #projectBoxTwo, #projectBoxThree, #projectBoxFour{
     width: 50%;
+  }
+  #projectBoxOne, #projectBoxTwo{
+    margin-bottom: -100px;
+    outline: greenyellow 1px dotted !important;
   }
   #projectOneVideo, #projectTwoVideo, #projectThreeVideo, #projectFourVideo{
     height: 50%;
@@ -1164,41 +1316,81 @@ body {
     font-size: 0.8em;
   }
   #projectBoxThreeHead, #projectBoxFourHead{
-    top: 51%;
+    top: 60%;
     font-size: 0.8em;
   }
-  #projectBoxOneDescription, #projectBoxTwoDescription, #projectBoxThreeDescription, #projectBoxFourDescription{
-    top: 56%;
+  #projectBoxOneDescription, #projectBoxTwoDescription{
+    top: 57%;
     font-size: 0.70em;
     height: fit-content;
   }
-  #projectOneGithub, #projectTwoGithub, #projectThreeGithub{
+  #projectBoxThreeDescription, #projectBoxFourDescription{
+    top: 66%;
+    font-size: 0.70em;
+    height: fit-content;
+
+  }
+  #projectOneGithub{
     width: 100%;
     height: fit-content;
     font-size: 0.70em;
-    top: 102%;
+    top: 107%;
+    outline: greenyellow 2px dotted !important;
   }
-  #projectTwoGithub, #projectFourGithub{
+  #projectTwoGithub{
     width: 50%;
-    top: 102%;
+    top: 107%;
     height: fit-content;
     font-size: 0.70em;
     position: absolute;
     left: 1%;
     transform: translateX(-1%);
+    outline: greenyellow 2px dotted !important;
   }
-  #projectTwoWebsite, #projectFourWebsite {
-    width: 50%;
+  #projectThreeGithub{
+    width: 100%;
+    top: 110%;
     height: fit-content;
     font-size: 0.70em;
     position: absolute;
-    left: 100%;
-    transform: translateX(-100%);
-    top: 102%;
+    left: 1%;
+    transform: translateX(-1%);
+    outline: greenyellow 2px dotted !important;
+  }
+  #projectTwoWebsite{
+    width: 50%;
+    top: 107%;
+    height: fit-content;
+    font-size: 0.70em;
+    position: absolute;
+    left: 101%;
+    transform: translateX(-101%);
+    outline: greenyellow 2px dotted !important;
+  }
+  #projectFourGithub{
+    width: 50%;
+    top: 110%;
+    height: fit-content;
+    font-size: 0.70em;
+    position: absolute;
+    left: 1%;
+    transform: translateX(-1%);
+    outline: greenyellow 2px dotted !important;
+  }
+  #projectFourWebsite{
+    width: 50%;
+    top: 110%;
+    height: fit-content;
+    font-size: 0.70em;
+    position: absolute;
+    left: 101%;
+    transform: translateX(-101%);
+    outline: greenyellow 2px dotted !important;
   }
   #projectBoxThree, #projectBoxFour{
     padding-top: 25px;
   }
+
 
 
   #contactSection{
@@ -1253,104 +1445,158 @@ body {
 
 
   #footerTest{
-    width: 100vw;
-    height: 50vh !important;
+    background-color: #181818;
+    height: 20%;
     position: relative;
+    width: 100vw !important;
   }
   #footerContainer{
-    height: 50%;
-    width: 100%;
-    padding: 0 !important;
-    padding-top: 2px !important;
     position: relative;
-    top: -20%;
-    background-color: #181818;
+    height: 85%;
+    width: 100% !important;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
+
+
   #aboutFooterButton, #projectsFooterButton, #contactFooterButton{
-    height: fit-content;
-    font-size: 1em;
+    margin-top: 15px;
+    background-color: transparent;
+    font-family: "TikTok Font Regular", serif;
+    font-size: 0.75em;
+    box-shadow: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-decoration: none;
+    width: fit-content;
+    height: 10%;
+    border-style: solid; /* Explicitly set the border style */
+    border-width: 0; /* Explicitly set the border width */
+    border-left: none; /* Remove left border */
+    border-right: none; /* Remove right border */
   }
-  #quoteFooter, #createdByFooter{
+  #createdByFooter{
+    font-family: "TikTok Font Regular", serif;
+    top: 25%;
+    font-size: 0.5em;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    color: #888888;
     left: 50%;
     transform: translateX(-50%);
     position: relative;
     height: fit-content;
-    padding-top: 0 !important;
     text-align: center;
     align-content: center;
   }
 
 }
 
-@media only screen and (max-width: 421px) {
 
-  #projectsSection{
-    height: 120vh;
-    outline: yellow 5px dotted !important;
-
-  }
-  #footerTest{
-    height: 220px !important;
-  }
-  #aboutFooterButton, #projectsFooterButton, #contactFooterButton{
-    outline: green 2px dotted !important;
-  }
-  #createdByFooter{
-    outline: hotpink 2px dotted !important;
-    position: relative;
-    height: fit-content;
-    padding-top: 0 !important;
-    text-align: center;
-    align-content: center;
-    left: 12.5%;
-    top: 110%;
-  }
+@media only screen and (min-width: 500px) and (max-width: 768px) {
 
 
-  #projectBoxOne, #projectBoxTwo, #projectBoxThree, #projectBoxFour{
-    outline: hotpink 2px dotted !important;
-    height: 57%;
+  #leftUpperPanel, #leftLowerPanel, #letter, #text{
+    display: none;
   }
-  #projectBoxOneHead{
-    outline: azure 2px dotted !important;
-  }
-
-  #projectBoxOneDescription, #projectBoxTwoDescription{
-    outline: blue 2px dotted !important;
-    top: 57%;
-
-  }
-  #projectOneGithub{
-    outline: palegreen 2px dotted !important;
-    width: 100%;
-    height: fit-content;
-    font-size: 0.70em;
-    top: 95%;
-  }
-  #projectTwoGithub, #projectTwoWebsite{
-    top: 95%;
-    outline: greenyellow 2px dotted !important;
-  }
-  #projectThreeVideo, #projectFourVideo{
+  #leftPanel500pxClosed{
+    display: block;
+    outline: yellow 2px dotted;
+    position: absolute;
     top: 0;
+    left: 0;
+    width: 10vw;
+    height: 100vh;
+    background-color: #181818;
   }
-  #projectThreeGithub{
-    top: 93%;
-    outline: greenyellow 2px dotted !important;
+  #hamburgerMenu500px{
+    top: 6vh;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    background-color: transparent;
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+    border-style: solid; /* Explicitly set the border style */
+    border-width: 0; /* Explicitly set the border width */
+    border-left: none; /* Remove left border */
+    border-right: none; /* Remove right border */
+    z-index: 4;
   }
-  #projectFourWebsite, #projectFourGithub{
-    top: 93%;
-    outline: greenyellow 2px dotted !important;
+  .hiddenLeftPanel500px{
+    height: inherit;
+    width: 80vw;
+    background-color: #181818;
+    position: absolute;
+    z-index: 3;
+    transform: translateX(-100%); /* Hide it off-screen to the left */
+    opacity: 0; /* Start with it being invisible */
+    transition: opacity 0.5s, transform 0.5s; /* Animate both opacity and transform */
   }
-
-
-
-
+  .hiddenLeftPanel500px.visible {
+    transform: translateX(0); /* Move into view */
+    opacity: 1; /* Make it fully visible */
+  }
+  #aboutButtonLeftPanelHidden, #projectsButtonLeftPanelHidden, #contactButtonLeftPanelHidden{
+    background-color: transparent;
+    font-family: "TikTok Font Regular", serif;
+    font-size: 18px;
+    box-shadow: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15%;
+    color: white;
+    outline: none;
+    text-decoration: none;
+    width: 100%;
+    height: 10%;
+    padding: 0;
+    margin: 0;
+    border-style: solid; /* Explicitly set the border style */
+    border-width: 1px; /* Explicitly set the border width */
+    border-color: #555555; /* Set the border color for all sides */
+    border-left: none; /* Remove left border */
+    border-right: none; /* Remove right border */
+    border-bottom: none;
+  }
+  #contactButtonLeftPanelHidden{
+    padding: 0;
+    margin: 0;
+    border-style: solid; /* Explicitly set the border style */
+    border-width: 1px; /* Explicitly set the border width */
+    border-color: #555555; /* Set the border color for all sides */
+    border-left: none; /* Remove left border */
+    border-right: none; /* Remove right border */
+  }
+  #aboutButtonLeftPanelHidden:hover,
+  #aboutButtonLeftPanelHidden:focus,
+  #aboutButtonLeftPanelHidden:active,
+  #projectsButtonLeftPanelHidden:hover,
+  #projectsButtonLeftPanelHidden:focus,
+  #projectsButtonLeftPanelHidden:active,
+  #contactButtonLeftPanelHidden:hover,
+  #contactButtonLeftPanelHidden:focus,
+  #contactButtonLeftPanelHidden:active{
+    cursor: pointer;
+    outline: none;
+    border-color: #555555; /* Maintain the border color on hover, focus, and active */
+  }
+  #hamburgerMenu500pxImage{
+    height: 2vh;
+    width: 6vw;
+  }
 
 
 }
-
-
 
 
 
