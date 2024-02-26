@@ -870,7 +870,7 @@ body {
 }
 
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 334px) {
 
   #projectsSection{
     height: 120vh;
@@ -891,6 +891,7 @@ body {
     align-content: center;
     left: 12.5%;
     top: 110%;
+    width: fit-content;
   }
 
 
@@ -905,7 +906,6 @@ body {
   #projectBoxOneDescription, #projectBoxTwoDescription{
     outline: blue 2px dotted !important;
     top: 57%;
-
   }
   #projectOneGithub{
     outline: palegreen 2px dotted !important;
@@ -1029,19 +1029,15 @@ body {
 
 
 
-@media only screen and (min-width: 375px) and (max-width: 500px) {
-  /* Styles here will only be applied to screens with a width of 500px or less */
+@media only screen and (min-width: 335px) and (max-width: 500px) {
 
   #projectBoxOne, #projectBoxTwo {
-    outline: yellow 2px dotted !important;
     height: 37.5%;
   }
   #projectBoxThree, #projectBoxFour{
-    outline: yellow 2px dotted !important;
     height: 37.5%;
   }
   #projectsSection{
-    outline: red 5px dotted !important;
   }
 
   html{
@@ -1058,7 +1054,6 @@ body {
   #border{
     width: 100%;
     left: 54vw;
-    outline: deeppink 2px dotted !important;
   }
   #runningWritingHeadClose{
     margin-left: 3vw;
@@ -1126,7 +1121,6 @@ body {
   }
   #leftPanel500pxClosed{
     display: block;
-    outline: yellow 2px dotted;
     position: absolute;
     top: 0;
     left: 0;
@@ -1222,7 +1216,6 @@ body {
     width: 93%;
     left: 59%;
     height: 100vh;
-    outline: red 2px dotted !important;
   }
   #aboutSectionContainer{
     width: 99%;
@@ -1290,11 +1283,9 @@ body {
     width: 93%;
     left: 59%;
     height: 150vh !important;
-    outline: red 5px dotted !important;
   }
   #projectsHeading{
     font-size: 2rem;
-    outline: yellow 2px dotted !important;
     padding-bottom: 30px;
   }
   #projectsDisplayContainer{
@@ -1305,7 +1296,6 @@ body {
   }
   #projectBoxOne, #projectBoxTwo{
     margin-bottom: -100px;
-    outline: greenyellow 1px dotted !important;
   }
   #projectOneVideo, #projectTwoVideo, #projectThreeVideo, #projectFourVideo{
     height: 50%;
@@ -1320,12 +1310,12 @@ body {
     font-size: 0.8em;
   }
   #projectBoxOneDescription, #projectBoxTwoDescription{
-    top: 57%;
+    top: 62%;
     font-size: 0.70em;
     height: fit-content;
   }
   #projectBoxThreeDescription, #projectBoxFourDescription{
-    top: 66%;
+    top: 71%;
     font-size: 0.70em;
     height: fit-content;
 
@@ -1335,7 +1325,6 @@ body {
     height: fit-content;
     font-size: 0.70em;
     top: 107%;
-    outline: greenyellow 2px dotted !important;
   }
   #projectTwoGithub{
     width: 50%;
@@ -1345,17 +1334,15 @@ body {
     position: absolute;
     left: 1%;
     transform: translateX(-1%);
-    outline: greenyellow 2px dotted !important;
   }
   #projectThreeGithub{
     width: 100%;
-    top: 110%;
+    top: 111%;
     height: fit-content;
     font-size: 0.70em;
     position: absolute;
     left: 1%;
     transform: translateX(-1%);
-    outline: greenyellow 2px dotted !important;
   }
   #projectTwoWebsite{
     width: 50%;
@@ -1365,27 +1352,24 @@ body {
     position: absolute;
     left: 101%;
     transform: translateX(-101%);
-    outline: greenyellow 2px dotted !important;
   }
   #projectFourGithub{
     width: 50%;
-    top: 110%;
+    top: 111%;
     height: fit-content;
     font-size: 0.70em;
     position: absolute;
     left: 1%;
     transform: translateX(-1%);
-    outline: greenyellow 2px dotted !important;
   }
   #projectFourWebsite{
     width: 50%;
-    top: 110%;
+    top: 111%;
     height: fit-content;
     font-size: 0.70em;
     position: absolute;
     left: 101%;
     transform: translateX(-101%);
-    outline: greenyellow 2px dotted !important;
   }
   #projectBoxThree, #projectBoxFour{
     padding-top: 25px;
@@ -1394,17 +1378,14 @@ body {
 
 
   #contactSection{
-    outline: blue 1px dotted !important;
     width: 93%;
     left: 59%;
     height: 110vh;
   }
   #contactContainer{
-    outline: red 1px dotted !important;
     width: 100%;
   }
   #contactHeading{
-    outline: greenyellow 1px dotted !important;
     font-size: 2rem;
     height: fit-content;
     padding-bottom: 50px;
@@ -1498,7 +1479,146 @@ body {
 }
 
 
-@media only screen and (min-width: 500px) and (max-width: 768px) {
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+
+  #header1, #header2, #header3{
+    top: 150px;
+  }
+  #header1, #header2, #header3, .red, #danielText{
+    font-size: 4rem;
+  }
+  #header2{
+    padding-top: 20px;
+  }
+  #header3{
+    line-height: 65px;
+    padding-top: 20px;
+  }
+  #runningWritingH1Open{
+    top: 16%;
+  }
+  #runningWritingH1Close{
+    left: 55vw;
+  }
+  #paraOne{
+    top: 140px;
+    font-size: 1rem;
+  }
+  #runningWritingPOpen{
+    top: 16.5%;
+  }
+  #runningWritingPClose{
+    top: 16.5%;
+  }
+  #runningWritingPOpen, #runningWritingPClose, #paraOne {
+    margin-left: 10%;
+  }
+  #scrollDown{
+    margin-left: -7%;
+
+  }
+
+
+  #aboutSection{
+    height: 100vh;
+  }
+  #aboutMeHeading, #mySkillsHeading{
+    font-size: 2.75em;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    top: -5%;
+  }
+  #projectsHeading, #contactHeading{
+    font-size: 2.75em;
+  }
+  #textBoxAbout, #textBoxMySkills{
+    width: 50%;
+    padding: 0;
+    margin: 0;
+  }
+  #textBoxAbout{
+    font-size: 0.9rem;
+  }
+  #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping, #skillReCaptchaAutomation, #skillIFTTTWebhook {
+    background-color: #d5d5d5;
+    color: #333;
+    border: 1px solid #000000;
+    border-radius: 20px; /* Adjust for rounded corners */
+    padding: 10px 16px;
+    display: inline-block;
+    margin: 5px;
+    font-size: 0.9em;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+
+  #projectsDisplayContainer{
+    width: 100%;
+  }
+  #projectBoxOne, #projectBoxTwo, #projectBoxThree, #projectBoxFour{
+    width: 50%;
+  }
+  #projectBoxOne, #projectBoxTwo{
+    margin-bottom: 75px;
+  }
+  #projectOneVideo, #projectTwoVideo, #projectThreeVideo, #projectFourVideo{
+    height: 50%;
+    width: 95%;
+  }
+  #projectBoxOneHead, #projectBoxTwoHead, #projectBoxThreeHead, #projectBoxFourHead{
+    top: 200px;
+    width: 100%;
+    font-size: 0.8em;
+  }
+  #projectBoxOneDescription, #projectBoxTwoDescription, #projectBoxThreeDescription, #projectBoxFourDescription{
+    top: 57.5%;
+    font-size: 0.70em;
+    height: fit-content;
+  }
+  #projectOneGithub, #projectTwoGithub, #projectTwoWebsite, #projectThreeGithub, #projectFourGithub, #projectFourWebsite{
+    font-size: 0.8em;
+  }
+  #projectOneGithub{
+    top: 82%;
+    width: 100%;
+    height: fit-content;
+    left: 1%;
+    transform: translateX(-1%);
+  }
+  #projectTwoGithub{
+    top: 82%;
+    width: 50%;
+    height: fit-content;
+    left: 1%;
+    transform: translateX(-1%);
+  }
+  #projectTwoWebsite{
+    top: 82%;
+    width: 50%;
+    height: fit-content;
+    left: 101%;
+    transform: translateX(-101%);
+  }
+  #projectThreeGithub{
+    top: 78%;
+    width: 100%;
+  }
+  #projectFourGithub{
+    top: 78%;
+    width: 50%;
+    height: fit-content;
+    left: 1%;
+    transform: translateX(-1%);
+  }
+  #projectFourWebsite{
+    top: 78%;
+    width: 50%;
+    height: fit-content;
+    left: 101%;
+    transform: translateX(-101%);
+  }
 
 
   #leftUpperPanel, #leftLowerPanel, #letter, #text{
@@ -1506,7 +1626,6 @@ body {
   }
   #leftPanel500pxClosed{
     display: block;
-    outline: yellow 2px dotted;
     position: absolute;
     top: 0;
     left: 0;
@@ -1594,7 +1713,6 @@ body {
     height: 2vh;
     width: 6vw;
   }
-
 
 }
 
