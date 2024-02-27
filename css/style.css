@@ -211,7 +211,6 @@ html {
 
 #leftUpperPanel{
   background-color: black;
-  outline: gold 2px dotted;
   position: absolute;
   height: 25%;
   width: 10%;
@@ -346,7 +345,6 @@ html {
   transform: translateX(-50%);
   width: 80%;
   height: 1080px;
-  outline: pink 2px dotted;
   display: flex;
   flex-direction: column;
 }
@@ -427,7 +425,6 @@ body {
 }
 
 #projectsSection{
-  outline: red 2px dotted;
   position: relative;
   height: 1080px;
   width: 80%;
@@ -671,7 +668,6 @@ body {
 
 
 #contactSection{
-  outline: gold 2px dotted;
   position: relative;
   height: 1080px;
   width: 80%;
@@ -872,70 +868,103 @@ body {
 
 @media only screen and (max-width: 334px) {
 
+  #projectBoxOne, #projectBoxTwo {
+    height: 37.5%;
+  }
+  #projectBoxThree, #projectBoxFour{
+    height: 37.5%;
+  }
   #projectsSection{
-    height: 120vh;
-    outline: yellow 5px dotted !important;
   }
-  #footerTest{
-    height: 220px !important;
-  }
-  #aboutFooterButton, #projectsFooterButton, #contactFooterButton{
-    outline: green 2px dotted !important;
-  }
-  #createdByFooter{
-    outline: hotpink 2px dotted !important;
-    position: relative;
+
+  html{
+    width: 86vw;
     height: fit-content;
-    padding-top: 0 !important;
-    text-align: center;
-    align-content: center;
-    left: 12.5%;
-    top: 110%;
-    width: fit-content;
   }
-
-
-  #projectBoxOne, #projectBoxTwo, #projectBoxThree, #projectBoxFour{
-    outline: hotpink 2px dotted !important;
-    height: 57%;
+  html, body {
+    margin: 0;
+    padding: 0;
   }
-  #projectBoxOneHead{
-    outline: azure 2px dotted !important;
-  }
-
-  #projectBoxOneDescription, #projectBoxTwoDescription{
-    outline: blue 2px dotted !important;
-    top: 57%;
-  }
-  #projectOneGithub{
-    outline: palegreen 2px dotted !important;
+  #heroshot{
     width: 100%;
-    height: fit-content;
-    font-size: 0.70em;
-    top: 95%;
   }
-  #projectTwoGithub, #projectTwoWebsite{
-    top: 95%;
-    outline: greenyellow 2px dotted !important;
+  #border{
+    width: 100%;
+    left: 54vw;
   }
-  #projectThreeVideo, #projectFourVideo{
-    top: 0;
+  #runningWritingHeadClose{
+    margin-left: 3vw;
+    top: 3vh;
+    font-size: 1.5rem;
   }
-  #projectThreeGithub{
-    top: 93%;
-    outline: greenyellow 2px dotted !important;
+  #runningWritingBodyOpen{
+    margin-left: 3vw;
+    font-size: 1.5rem;
+    top: 5vh;
   }
-  #projectFourWebsite, #projectFourGithub{
-    top: 93%;
-    outline: greenyellow 2px dotted !important;
+  #runningWritingH1Open{
+    margin-left: 3vw;
+    top: 11vh;
+    font-size: 1.5rem;
+
+  }
+  #runningWritingH1Close{
+    left: 55vw;
+    top: 14vh;
+    font-size: 1.5rem;
+
+  }
+  #runningWritingPOpen{
+    margin-left: 10vw;
+    top: 15vh;
+  }
+  #runningWritingPClose{
+    margin-left: 10vw;
+    top: 16vh;
   }
 
+  #paraOne{
+    margin-left: 10vw;
+    font-size: 0.9rem;
+    width: 84%;
+    top: 16vh;
+  }
+  #scrollDown{
+    margin-left: -7vw;
+    top: 8vh;
+    font-size: 0.8rem;
+  }
+  #header1, #header2, #header3, .red, #danielText{
+    font-size: 2.75rem;
+  }
+  #header2{
+    width: 63vw !important;
+  }
+  .red {
+    text-shadow: -5px 0 0 #00dfd8; /* Blue-ish shadow effect to the left */
+  }
+  #header1{
+    top: 10vh;
+    position: relative;
+    margin-left: 5vw;
+  }
+  #header2{
+    top: 12vh;
+    position: relative;
+    width: 150%;
+    margin-left: 5vw;
+  }
+  #header3{
+    top: 15vh;
+    position: relative;
+    margin-left: 5vw;
+    line-height: 50px;
+  }
   #leftUpperPanel, #leftLowerPanel, #letter, #text{
     display: none;
   }
   #leftPanel500pxClosed{
     display: block;
-    outline: yellow 2px dotted;
     position: absolute;
     top: 0;
     left: 0;
@@ -974,6 +1003,7 @@ body {
     transform: translateX(0); /* Move into view */
     opacity: 1; /* Make it fully visible */
   }
+
   #aboutButtonLeftPanelHidden, #projectsButtonLeftPanelHidden, #contactButtonLeftPanelHidden{
     background-color: transparent;
     font-family: "TikTok Font Regular", serif;
@@ -1019,15 +1049,277 @@ body {
     outline: none;
     border-color: #555555; /* Maintain the border color on hover, focus, and active */
   }
+
+
   #hamburgerMenu500pxImage{
     height: 2vh;
     width: 6vw;
   }
+
+  #aboutSection{
+    width: 93%;
+    left: 59%;
+    height: 100vh;
+  }
+  #aboutSectionContainer{
+    width: 99%;
+    height: 100vh;
+  }
+
+  #aboutMeHeading, #mySkillsHeading{
+    width: 50%;
+    padding-top: 25px;
+    font-size: 1.5rem !important;
+  }
+  #aboutMeHeading{
+    left: 0;
+    margin-left: 0 !important;
+    position: absolute;
+    top: 0;
+  }
+  #mySkillsHeading{
+    left: 50%;
+    position: absolute;
+    top: 0;
+    width: 50%;
+  }
+  #textBoxAbout, #textBoxMySkills {
+    width: 50%;
+    height: fit-content;
+  }
+  #textBoxAbout{
+    left: 0;
+    margin-left: 0 !important;
+    position: absolute;
+    top: 10vh;
+    width: 50% !important;
+    font-size: 0.65rem !important;
+    text-align: center;
+    padding-top: 50px !important;
+    padding-right: 0 !important;
+  }
+  #textBoxMySkills{
+    left: 40%;
+    position: absolute;
+    top: 10vh;
+    padding-top: 50px !important;
+    padding-left: 0 !important;
+  }
+  #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping, #skillReCaptchaAutomation, #skillIFTTTWebhook {
+    background-color: #d5d5d5;
+    color: #333;
+    border: 1px solid #000000;
+    border-radius: 15px; /* Adjust for rounded corners */
+    padding: 5px 10px;
+    display: inline-block;
+    margin: 3px;
+    font-size: 0.7em;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+
+  }
+
+
+
+
+  #projectsSection{
+    width: 93%;
+    left: 59%;
+    height: 150vh !important;
+  }
+  #projectsHeading{
+    font-size: 2rem;
+    padding-bottom: 30px;
+  }
+  #projectsDisplayContainer{
+    width: 100%;
+  }
+  #projectBoxOne, #projectBoxTwo, #projectBoxThree, #projectBoxFour{
+    width: 50%;
+  }
+  #projectBoxOne, #projectBoxTwo{
+    margin-bottom: -100px;
+  }
+  #projectOneVideo, #projectTwoVideo, #projectThreeVideo, #projectFourVideo{
+    height: 50%;
+    width: 95%;
+  }
+  #projectBoxOneHead, #projectBoxTwoHead{
+    top: 51%;
+    font-size: 0.7em;
+  }
+  #projectBoxThreeHead, #projectBoxFourHead{
+    top: 51%;
+    font-size: 0.7em;
+  }
+  #projectBoxOneDescription, #projectBoxTwoDescription{
+    top: 60%;
+    font-size: 0.65em;
+    height: fit-content;
+  }
+  #projectBoxThreeDescription, #projectBoxFourDescription{
+    top: 60%;
+    font-size: 0.65em;
+    height: fit-content;
+
+  }
+  #projectOneGithub{
+    width: 100%;
+    height: fit-content;
+    font-size: 0.70em;
+    top: 115%;
+  }
+  #projectTwoGithub{
+    width: 50%;
+    top: 115%;
+    height: fit-content;
+    font-size: 0.70em;
+    position: absolute;
+    left: 1%;
+    transform: translateX(-1%);
+  }
+  #projectThreeGithub{
+    width: 100%;
+    top: 106%;
+    height: fit-content;
+    font-size: 0.70em;
+    position: absolute;
+    left: 1%;
+    transform: translateX(-1%);
+  }
+  #projectTwoWebsite{
+    width: 50%;
+    top: 115%;
+    height: fit-content;
+    font-size: 0.70em;
+    position: absolute;
+    left: 101%;
+    transform: translateX(-101%);
+  }
+  #projectFourGithub{
+    width: 50%;
+    top: 106%;
+    height: fit-content;
+    font-size: 0.70em;
+    position: absolute;
+    left: 1%;
+    transform: translateX(-1%);
+  }
+  #projectFourWebsite{
+    width: 50%;
+    top: 106%;
+    height: fit-content;
+    font-size: 0.70em;
+    position: absolute;
+    left: 101%;
+    transform: translateX(-101%);
+  }
+  #projectBoxThree, #projectBoxFour{
+    margin-top: 75% !important;
+  }
+
+
+
+  #contactSection{
+    width: 93%;
+    left: 59%;
+    height: 110vh;
+  }
+  #contactContainer{
+    width: 100%;
+  }
+  #contactHeading{
+    font-size: 2rem;
+    height: fit-content;
+    padding-bottom: 50px;
+    top: -7.5%;
+    padding-top: 0;
+
+  }
+
+  #contactCardOne, #contactCardTwo, #contactCardThree{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+  }
+
+  #gmailContactUsername, #githubContactUsername, #linkedInContactUsername{
+    font-size: 1rem;
+  }
+
+
+  #githubContact, #gmailContact, #linkedInContact{
+    width: 32px;
+    height: auto;
+  }
+
+
+  #runningWritingClickMeOpenOne{
+    font-size: 1.25rem;
+    left: 12%;
+    top: 28%;
+  }
+  #runningWritingClickMeCloseOne{
+    font-size: 1.25rem;
+    top: 70%;
+    left: 75%;
+  }
+
+
+
+  #footerTest{
+    background-color: #181818;
+    height: 20%;
+    position: relative;
+    width: 100vw !important;
+  }
+  #footerContainer{
+    position: relative;
+    height: 85%;
+    width: 100% !important;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+
+  #aboutFooterButton, #projectsFooterButton, #contactFooterButton{
+    margin-top: 15px;
+    background-color: transparent;
+    font-family: "TikTok Font Regular", serif;
+    font-size: 0.75em;
+    box-shadow: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-decoration: none;
+    width: fit-content;
+    height: 10%;
+    border-style: solid; /* Explicitly set the border style */
+    border-width: 0; /* Explicitly set the border width */
+    border-left: none; /* Remove left border */
+    border-right: none; /* Remove right border */
+  }
+  #createdByFooter{
+    font-family: "TikTok Font Regular", serif;
+    top: 25%;
+    font-size: 0.5em;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    color: #888888;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    height: fit-content;
+    text-align: center;
+    align-content: center;
+  }
+
 }
-
-
-
-
 
 @media only screen and (min-width: 335px) and (max-width: 500px) {
 
@@ -1478,7 +1770,6 @@ body {
 
 }
 
-
 @media only screen and (min-width: 501px) and (max-width: 768px) {
 
   #header1, #header2, #header3{
@@ -1715,8 +2006,6 @@ body {
   }
 
 }
-
-
 
 @media only screen and (min-width: 769px) and (max-width: 821px) {
 
@@ -1956,7 +2245,6 @@ body {
     width: 6vw;
   }
 }
-
 
 @media only screen and (min-width: 822px) and (max-width: 1024px) {
 
@@ -2203,7 +2491,6 @@ body {
 
 }
 
-
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
 
 
@@ -2261,7 +2548,6 @@ body {
     padding-bottom: 5% !important;
     margin: 0;
     top: -10%;
-    outline: blue 2px dotted !important;
   }
   #projectsHeading, #contactHeading{
     font-size: 3.25em;
@@ -2378,8 +2664,7 @@ body {
 
 }
 
-
-  @media only screen and (min-width: 1281px) and (max-width: 1440px) {
+@media only screen and (min-width: 1281px) and (max-width: 1440px) {
 
 
     #runningWritingHeadClose, #runningWritingBodyOpen{
@@ -2436,7 +2721,6 @@ body {
       padding-bottom: 5% !important;
       margin: 0;
       top: -10%;
-      outline: blue 2px dotted !important;
     }
     #projectsHeading, #contactHeading{
       font-size: 3.25em;
@@ -2552,6 +2836,713 @@ body {
     }
 
 }
+
+@media only screen and (min-width: 1441px) and (max-width: 1919px) {
+
+  #leftUpperPanel{
+    width: 15%;
+
+  }
+  #leftLowerPanel{
+    width: 15%;
+
+  }
+
+  #runningWritingHeadClose, #runningWritingBodyOpen{
+    left: 8%;
+  }
+  #header1, #header2, #header3  {
+    top: 15% !important;
+  }
+  #header1, #header2, #header3, .red, #danielText{
+    font-size: 5.5rem;
+    left: 8%;
+  }
+  #header2{
+    padding-top: 20px;
+  }
+  #header3{
+    line-height: 85px;
+    padding-top: 20px;
+  }
+  #runningWritingH1Open{
+    top: 10%;
+    display: none;
+  }
+  #runningWritingH1Close{
+    left: 82.5%;
+    display: none;
+  }
+  #paraOne{
+    top: 20%;
+    font-size: 1rem;
+  }
+  #runningWritingPOpen{
+    top: 19.75%;
+  }
+  #runningWritingPClose{
+    top: 19.75%;
+  }
+  #runningWritingPOpen, #runningWritingPClose, #paraOne {
+    margin-left: 10%;
+  }
+  #scrollDown{
+    margin-left: 3%;
+    top: 25%;
+    font-size: 1.25rem;
+  }
+
+
+  #projectOneVideo, #projectTwoVideo, #projectThreeVideo, #projectFourVideo{
+    height: 65%;
+    width: 100%;
+  }
+  #projectBoxOneHead, #projectBoxTwoHead, #projectBoxThreeHead, #projectBoxFourHead{
+    width: 100%;
+    top: 67.5%;
+  }
+  #projectBoxOneDescription, #projectBoxTwoDescription, #projectBoxThreeDescription, #projectBoxFourDescription{
+    top: 72.5%;
+    height: fit-content;
+    padding: 5px;
+  }
+  #projectOneGithub, #projectTwoGithub, #projectTwoWebsite, #projectThreeGithub, #projectFourGithub, #projectFourWebsite{
+    font-size: 0.8em;
+  }
+  #projectOneGithub{
+    top: 94%;
+    width: 100%;
+    height: fit-content;
+    left: 1%;
+    transform: translateX(-1%);
+  }
+  #projectTwoGithub{
+    top: 94%;
+    width: 50%;
+    height: fit-content;
+    left: 1%;
+    transform: translateX(-1%);
+  }
+  #projectTwoWebsite{
+    top: 94%;
+    width: 50%;
+    height: fit-content;
+    left: 101%;
+    transform: translateX(-101%);
+  }
+  #projectThreeGithub{
+    top: 94%;
+    width: 100%;
+  }
+  #projectFourGithub{
+    top: 94%;
+    width: 50%;
+    height: fit-content;
+    left: 1%;
+    transform: translateX(-1%);
+  }
+  #projectFourWebsite{
+    top: 94%;
+    width: 50%;
+    height: fit-content;
+    left: 101%;
+    transform: translateX(-101%);
+  }
+
+}
+
+@media only screen and (min-width: 1921px) and (max-width: 2560px) {
+
+  #leftUpperPanel{
+    width: 12.5%;
+
+  }
+  #leftLowerPanel{
+    width: 12.5%;
+
+  }
+
+  #runningWritingHeadClose, #runningWritingBodyOpen{
+    left: 5%;
+    font-size: 2.5rem;
+  }
+  #header1, #header2, #header3  {
+    top: 15% !important;
+  }
+  #header1, #header2, #header3, .red, #danielText{
+    font-size: 7rem;
+    left: 5%;
+  }
+  #header2{
+    padding-top: 20px;
+  }
+  #header3{
+    line-height: 85px;
+    padding-top: 20px;
+  }
+  #runningWritingH1Open{
+    top: 10%;
+    display: none;
+  }
+  #runningWritingH1Close{
+    left: 82.5%;
+    display: none;
+  }
+  #paraOne{
+    top: 20%;
+    font-size: 1.5rem;
+  }
+  #runningWritingPOpen{
+    top: 19.75%;
+    font-size: 2.25rem;
+  }
+  #runningWritingPClose{
+    top: 19.75%;
+    font-size: 2.25rem;
+  }
+  #runningWritingPOpen, #runningWritingPClose, #paraOne {
+    margin-left: 10%;
+  }
+  #scrollDown{
+    margin-left: -2%;
+    top: 6%;
+  }
+
+
+  #heroshot, #aboutSection, #projectsSection, #contactSection {
+    height: 100vh !important;
+  }
+  #runningWritingH1Open{
+    display: none;
+  }
+  #runningWritingH1Close{
+    display: none;
+  }
+  #textBoxAbout {
+    font-size: 1.75rem;
+  }
+  #aboutMeHeading, #mySkillsHeading, #projectsHeading, #contactHeading {
+    font-size: 4rem;
+  }
+  #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping, #skillReCaptchaAutomation, #skillIFTTTWebhook {
+    background-color: #d5d5d5;
+    color: #333;
+    border: 1px solid #000000;
+    border-radius: 20px; /* Adjust for rounded corners */
+    padding: 15px 28px;
+    display: inline-block;
+    margin: 5px;
+    font-size: 1.5em;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  #projectOneVideo, #projectTwoVideo, #projectThreeVideo, #projectFourVideo{
+    height: 69%;
+    width: 100%;
+  }
+  #projectBoxOneHead, #projectBoxTwoHead, #projectBoxThreeHead, #projectBoxFourHead{
+    width: 100%;
+    top: 67.5%;
+    font-size: 1.6em;
+
+  }
+  #projectBoxOneDescription, #projectBoxTwoDescription, #projectBoxThreeDescription, #projectBoxFourDescription{
+    top: 72.5%;
+    height: fit-content;
+    padding: 5px;
+    font-size: 1.4em;
+
+  }
+  #projectOneGithub, #projectTwoGithub, #projectTwoWebsite, #projectThreeGithub, #projectFourGithub, #projectFourWebsite{
+    font-size: 1.4em;
+  }
+  #projectOneGithub{
+    top: 106%;
+    width: 100%;
+    height: fit-content;
+    left: 1%;
+    transform: translateX(-1%);
+  }
+  #projectTwoGithub{
+    top: 106%;
+    width: 50%;
+    height: fit-content;
+    left: 1%;
+    transform: translateX(-1%);
+  }
+  #projectTwoWebsite{
+    top: 106%;
+    width: 50%;
+    height: fit-content;
+    left: 101%;
+    transform: translateX(-101%);
+  }
+  #projectThreeGithub{
+    top: 99%;
+    width: 100%;
+  }
+  #projectFourGithub{
+    top: 99%;
+    width: 50%;
+    height: fit-content;
+    left: 1%;
+    transform: translateX(-1%);
+  }
+  #projectFourWebsite{
+    top: 99%;
+    width: 50%;
+    height: fit-content;
+    left: 101%;
+    transform: translateX(-101%);
+  }
+  #projectBoxThree, #projectBoxFour{
+    margin-top: 10%;
+  }
+
+  #text, #aboutButtonLeftPanel, #projectsButtonLeftPanel, #contactButtonLeftPanel{
+    font-size: 1.75rem;
+  }
+
+  #githubContactUsername, #linkedInContactUsername, #gmailContactUsername{
+    font-size: 2rem !important;
+  }
+  #aboutFooterButton, #projectsFooterButton, #contactFooterButton{
+    font-size: 1.5rem;
+    padding-top: 15px;
+  }
+  #createdByFooter{
+    font-size: 1.25rem;
+    padding-top: 15px;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+
+  #heroshot, #aboutSection, #projectsSection, #contactSection {
+    height: 100vh !important;
+  }
+
+  #textBoxAbout {
+    font-size: 2rem;
+  }
+  #aboutMeHeading, #mySkillsHeading, #projectsHeading, #contactHeading {
+    font-size: 6rem;
+  }
+  #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping, #skillReCaptchaAutomation, #skillIFTTTWebhook {
+    background-color: #d5d5d5;
+    color: #333;
+    border: 1px solid #000000;
+    border-radius: 20px; /* Adjust for rounded corners */
+    padding: 20px 35px;
+    display: inline-block;
+    margin: 5px;
+    font-size: 1.75em;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+
+  #projectBoxOneHead, #projectBoxTwoHead, #projectBoxThreeHead, #projectBoxFourHead {
+    font-size: 1.75rem;
+    top: 70%;
+  }
+  #projectBoxOneDescription, #projectBoxTwoDescription, #projectBoxThreeDescription, #projectBoxFourDescription {
+    font-size: 1.5rem;
+    top: 77.5%;
+  }
+  #projectBoxThree, #projectBoxFour{
+    margin-top: 7%;
+  }
+
+  #linkedInButton img, #gitHubButton img{
+    width: 42px !important;
+    height: 42px !important;
+  }
+
+  #scrollDown{
+    margin-left: 1%;
+    top: 30%;
+    font-size: 1.9rem;
+  }
+
+  #aboutFooterButton, #projectsFooterButton, #contactFooterButton{
+    font-size: 2rem;
+    padding-top: 2%;
+  }
+  #createdByFooter{
+    font-size: 1.5rem;
+    padding-top: 2%;
+  }
+
+  }
+
+@media only screen and (min-width: 3440px)  {
+
+  .red{
+    text-shadow: -12px 0 0 #00dfd8; /* Blue-ish shadow effect to the left */
+  }
+  #letter{
+    text-shadow: -12px 0 0 #00dfd8; /* Blue-ish shadow effect to the left */
+    font-size: 10rem;
+  }
+  #leftUpperPanel{
+    width: 12.5%;
+
+  }
+  #leftLowerPanel{
+    width: 12.5%;
+
+  }
+
+  #runningWritingHeadClose, #runningWritingBodyOpen{
+    left: 5%;
+    font-size: 3.5rem;
+  }
+  #header1, #header2, #header3  {
+    top: 15% !important;
+  }
+  #header1, #header2, #header3, .red, #danielText{
+    font-size: 11rem;
+    left: 5%;
+  }
+  #header2{
+    padding-top: 22px;
+  }
+  #header3{
+    line-height: 85px;
+    padding-top: 50px;
+  }
+  #runningWritingH1Open{
+    top: 10%;
+    display: none;
+  }
+  #runningWritingH1Close{
+    left: 82.5%;
+    display: none;
+  }
+  #paraOne{
+    top: 22%;
+    font-size: 2rem;
+  }
+  #runningWritingPOpen{
+    top: 21.75%;
+    font-size: 3.75rem;
+  }
+  #runningWritingPClose{
+    top: 21.75%;
+    font-size: 3.5rem;
+  }
+  #runningWritingPOpen, #runningWritingPClose, #paraOne {
+    margin-left: 10%;
+  }
+  #scrollDown{
+    margin-left: 1%;
+    top: 16%;
+    font-size: 2.25rem;
+  }
+
+
+  #heroshot, #aboutSection, #projectsSection, #contactSection {
+    height: 100vh !important;
+  }
+  #runningWritingH1Open{
+    display: none;
+  }
+  #runningWritingH1Close{
+    display: none;
+  }
+  #textBoxAbout {
+    font-size: 2.2rem;
+  }
+  #aboutMeHeading, #mySkillsHeading, #projectsHeading, #contactHeading {
+    font-size: 6rem;
+  }
+  #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping, #skillReCaptchaAutomation, #skillIFTTTWebhook {
+    background-color: #d5d5d5;
+    color: #333;
+    border: 1px solid #000000;
+    border-radius: 20px; /* Adjust for rounded corners */
+    padding: 20px 30px;
+    display: inline-block;
+    margin: 8px;
+    font-size: 2em;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+
+  #projectOneVideo, #projectTwoVideo, #projectThreeVideo, #projectFourVideo{
+    height: 69%;
+    width: 75%;
+  }
+  #projectBoxOneHead, #projectBoxTwoHead, #projectBoxThreeHead, #projectBoxFourHead{
+    width: 100%;
+    top: 69%;
+    font-size: 1.9em;
+  }
+  #projectBoxOneDescription, #projectBoxTwoDescription, #projectBoxThreeDescription, #projectBoxFourDescription{
+    top: 76%;
+    height: fit-content;
+    padding: 5px;
+    font-size: 1.75em;
+
+  }
+  #projectOneGithub, #projectTwoGithub, #projectTwoWebsite, #projectThreeGithub, #projectFourGithub, #projectFourWebsite{
+    font-size: 1.75em;
+  }
+  #projectOneGithub{
+    top: 100%;
+    width: 100%;
+    height: fit-content;
+    left: 1%;
+    transform: translateX(-1%);
+  }
+  #projectTwoGithub{
+    top: 100%;
+    width: 50%;
+    height: fit-content;
+    left: 1%;
+    transform: translateX(-1%);
+  }
+  #projectTwoWebsite{
+    top: 100%;
+    width: 50%;
+    height: fit-content;
+    left: 101%;
+    transform: translateX(-101%);
+  }
+  #projectThreeGithub{
+    top: 100%;
+    width: 100%;
+  }
+  #projectFourGithub{
+    top: 100%;
+    width: 50%;
+    height: fit-content;
+    left: 1%;
+    transform: translateX(-1%);
+  }
+  #projectFourWebsite{
+    top: 100%;
+    width: 50%;
+    height: fit-content;
+    left: 101%;
+    transform: translateX(-101%);
+  }
+  #projectBoxThree, #projectBoxFour{
+    margin-top: 6%;
+  }
+
+  #text, #aboutButtonLeftPanel, #projectsButtonLeftPanel, #contactButtonLeftPanel{
+    font-size: 2rem;
+  }
+  #linkedInButton img, #gitHubButton img{
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+
+  #githubContactUsername, #linkedInContactUsername, #gmailContactUsername{
+    font-size: 3.25rem !important;
+  }
+  #contactCardOne, #contactCardTwo, #contactCardThree{
+    padding-top: 5% !important;
+  }
+  #aboutFooterButton, #projectsFooterButton, #contactFooterButton{
+    font-size: 2.25rem;
+    padding-top: 2%;
+  }
+  #createdByFooter{
+    font-size: 1.75rem;
+    padding-top: 2%;
+  }
+}
+
+@media only screen and (min-width: 3840px)  {
+
+
+  #leftUpperPanel{
+    width: 12.5%;
+
+  }
+  #leftLowerPanel{
+    width: 12.5%;
+  }
+
+  #runningWritingHeadClose, #runningWritingBodyOpen{
+    left: 5%;
+    font-size: 3.5rem;
+  }
+  #header1, #header2, #header3  {
+    top: 15% !important;
+  }
+  #header1, #header2, #header3, .red, #danielText{
+    font-size: 11rem;
+    left: 5%;
+  }
+  #header2{
+    padding-top: 22px;
+  }
+  #header3{
+    line-height: 85px;
+    padding-top: 50px;
+  }
+  #runningWritingH1Open{
+    top: 10%;
+    display: none;
+  }
+  #runningWritingH1Close{
+    left: 82.5%;
+    display: none;
+  }
+  #paraOne{
+    top: 22%;
+    font-size: 2rem;
+  }
+  #runningWritingPOpen{
+    top: 21.75%;
+    font-size: 3.75rem;
+  }
+  #runningWritingPClose{
+    top: 21.75%;
+    font-size: 3.5rem;
+  }
+  #runningWritingPOpen, #runningWritingPClose, #paraOne {
+    margin-left: 10%;
+  }
+  #scrollDown{
+    margin-left: 1%;
+    top: 35%;
+    font-size: 2.75rem;
+  }
+  .red{
+    text-shadow: -12px 0 0 #00dfd8; /* Blue-ish shadow effect to the left */
+  }
+
+
+  #heroshot, #aboutSection, #projectsSection, #contactSection {
+    height: 100vh !important;
+  }
+  #runningWritingH1Open{
+    display: none;
+  }
+  #runningWritingH1Close{
+    display: none;
+  }
+  #textBoxAbout {
+    font-size: 3rem;
+  }
+  #aboutMeHeading, #mySkillsHeading, #projectsHeading, #contactHeading {
+    font-size: 8.5rem;
+  }
+  #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping, #skillReCaptchaAutomation, #skillIFTTTWebhook {
+    background-color: #d5d5d5;
+    color: #333;
+    border: 1px solid #000000;
+    border-radius: 20px; /* Adjust for rounded corners */
+    padding: 25px 35px;
+    display: inline-block;
+    margin: 8px;
+    font-size: 3em;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+
+  #projectOneVideo, #projectTwoVideo, #projectThreeVideo, #projectFourVideo{
+    height: 75%;
+    width: 95%;
+  }
+  #projectBoxOneHead, #projectBoxTwoHead, #projectBoxThreeHead, #projectBoxFourHead{
+    width: 100%;
+    top: 75%;
+    font-size: 2.5em;
+  }
+  #projectBoxOneDescription, #projectBoxTwoDescription, #projectBoxThreeDescription, #projectBoxFourDescription{
+    top: 81%;
+    height: fit-content;
+    padding: 5px;
+    font-size: 2.25em;
+
+  }
+  #projectOneGithub, #projectTwoGithub, #projectTwoWebsite, #projectThreeGithub, #projectFourGithub, #projectFourWebsite{
+    font-size: 2.25em;
+  }
+  #projectOneGithub{
+    top: 106%;
+    width: 100%;
+    height: fit-content;
+    left: 1%;
+    transform: translateX(-1%);
+  }
+  #projectTwoGithub{
+    top: 106%;
+    width: 50%;
+    height: fit-content;
+    left: 1%;
+    transform: translateX(-1%);
+  }
+  #projectTwoWebsite{
+    top: 106%;
+    width: 50%;
+    height: fit-content;
+    left: 101%;
+    transform: translateX(-101%);
+  }
+  #projectThreeGithub{
+    top: 100%;
+    width: 100%;
+  }
+  #projectFourGithub{
+    top: 100%;
+    width: 50%;
+    height: fit-content;
+    left: 1%;
+    transform: translateX(-1%);
+  }
+  #projectFourWebsite{
+    top: 100%;
+    width: 50%;
+    height: fit-content;
+    left: 101%;
+    transform: translateX(-101%);
+  }
+  #projectBoxThree, #projectBoxFour{
+    margin-top: 10%;
+  }
+
+  #text, #aboutButtonLeftPanel, #projectsButtonLeftPanel, #contactButtonLeftPanel{
+    font-size: 2.5rem;
+  }
+  #linkedInButton img, #gitHubButton img{
+    width: 60px !important;
+    height: 60px !important;
+  }
+  #letter{
+    font-size: 14rem;
+    text-shadow: -12px 0 0 #00dfd8; /* Blue-ish shadow effect to the left */
+  }
+
+
+  #githubContactUsername, #linkedInContactUsername, #gmailContactUsername{
+    font-size: 4.25rem !important;
+  }
+  #contactCardOne, #contactCardTwo, #contactCardThree{
+    padding-top: 5% !important;
+  }
+  #aboutFooterButton, #projectsFooterButton, #contactFooterButton{
+    font-size: 2.5rem;
+    padding-top: 2%;
+  }
+  #createdByFooter{
+    font-size: 2rem;
+    padding-top: 2%;
+  }
+}
+
+
+
 
 
 /*
