@@ -2207,11 +2207,15 @@ body {
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
 
 
-  #header1, #header2, #header3{
+  #runningWritingHeadClose, #runningWritingBodyOpen{
+    left: 8%;
+  }
+  #header1, #header2, #header3  {
     top: 8% !important;
   }
   #header1, #header2, #header3, .red, #danielText{
     font-size: 5.5rem;
+    left: 8%;
   }
   #header2{
     padding-top: 20px;
@@ -2308,7 +2312,7 @@ body {
   }
   #projectBoxThreeHead, #projectBoxFourHead{
     width: 100%;
-    top: 338px;
+    top: 344px;
   }
   #projectBoxOneDescription, #projectBoxTwoDescription{
     top: 80%;
@@ -2316,7 +2320,7 @@ body {
     padding: 5px;
   }
   #projectBoxThreeDescription, #projectBoxFourDescription{
-    top: 90%;
+    top: 91%;
     height: fit-content;
     padding: 5px;
   }
@@ -2363,99 +2367,190 @@ body {
     transform: translateX(-101%);
   }
 
+  #leftUpperPanel{
+    width: 15%;
 
-  #leftUpperPanel, #leftLowerPanel, #letter, #text{
-    display: none;
   }
-  #leftPanel500pxClosed{
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 10vw;
-    height: 100vh;
-    background-color: #181818;
+  #leftLowerPanel{
+    width: 15%;
+
   }
-  #hamburgerMenu500px{
-    top: 6vh;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    background-color: transparent;
-    text-decoration: none;
-    width: fit-content;
-    height: fit-content;
-    padding: 0;
-    margin: 0;
-    border-style: solid; /* Explicitly set the border style */
-    border-width: 0; /* Explicitly set the border width */
-    border-left: none; /* Remove left border */
-    border-right: none; /* Remove right border */
-    z-index: 4;
-  }
-  .hiddenLeftPanel500px{
-    height: inherit;
-    width: 80vw;
-    background-color: #181818;
-    position: absolute;
-    z-index: 3;
-    transform: translateX(-100%); /* Hide it off-screen to the left */
-    opacity: 0; /* Start with it being invisible */
-    transition: opacity 0.5s, transform 0.5s; /* Animate both opacity and transform */
-  }
-  .hiddenLeftPanel500px.visible {
-    transform: translateX(0); /* Move into view */
-    opacity: 1; /* Make it fully visible */
-  }
-  #aboutButtonLeftPanelHidden, #projectsButtonLeftPanelHidden, #contactButtonLeftPanelHidden{
-    background-color: transparent;
-    font-family: "TikTok Font Regular", serif;
-    font-size: 18px;
-    box-shadow: none;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 15%;
-    color: white;
-    outline: none;
-    text-decoration: none;
-    width: 100%;
-    height: 10%;
-    padding: 0;
-    margin: 0;
-    border-style: solid; /* Explicitly set the border style */
-    border-width: 1px; /* Explicitly set the border width */
-    border-color: #555555; /* Set the border color for all sides */
-    border-left: none; /* Remove left border */
-    border-right: none; /* Remove right border */
-    border-bottom: none;
-  }
-  #contactButtonLeftPanelHidden{
-    padding: 0;
-    margin: 0;
-    border-style: solid; /* Explicitly set the border style */
-    border-width: 1px; /* Explicitly set the border width */
-    border-color: #555555; /* Set the border color for all sides */
-    border-left: none; /* Remove left border */
-    border-right: none; /* Remove right border */
-  }
-  #aboutButtonLeftPanelHidden:hover,
-  #aboutButtonLeftPanelHidden:focus,
-  #aboutButtonLeftPanelHidden:active,
-  #projectsButtonLeftPanelHidden:hover,
-  #projectsButtonLeftPanelHidden:focus,
-  #projectsButtonLeftPanelHidden:active,
-  #contactButtonLeftPanelHidden:hover,
-  #contactButtonLeftPanelHidden:focus,
-  #contactButtonLeftPanelHidden:active{
-    cursor: pointer;
-    outline: none;
-    border-color: #555555; /* Maintain the border color on hover, focus, and active */
-  }
-  #hamburgerMenu500pxImage{
-    height: 2vh;
-    width: 2vw;
-  }
+
+}
+
+
+  @media only screen and (min-width: 1281px) and (max-width: 1440px) {
+
+
+    #runningWritingHeadClose, #runningWritingBodyOpen{
+      left: 8%;
+    }
+    #header1, #header2, #header3  {
+      top: 8% !important;
+    }
+    #header1, #header2, #header3, .red, #danielText{
+      font-size: 5.5rem;
+      left: 8%;
+    }
+    #header2{
+      padding-top: 20px;
+    }
+    #header3{
+      line-height: 85px;
+      padding-top: 20px;
+    }
+    #runningWritingH1Open{
+      top: 10%;
+      display: none;
+    }
+    #runningWritingH1Close{
+      left: 82.5%;
+      display: none;
+    }
+    #paraOne{
+      top: 16.75%;
+      font-size: 1rem;
+    }
+    #runningWritingPOpen{
+      top: 16.5%;
+    }
+    #runningWritingPClose{
+      top: 16.5%;
+    }
+    #runningWritingPOpen, #runningWritingPClose, #paraOne {
+      margin-left: 10%;
+    }
+    #scrollDown{
+      margin-left: -2%;
+      top: 6%;
+    }
+
+
+    #aboutSection{
+      height: 80vh !important;
+    }
+    #aboutMeHeading, #mySkillsHeading{
+      width: 50%;
+      font-size: 3.25em;
+      padding: 0;
+      padding-bottom: 5% !important;
+      margin: 0;
+      top: -10%;
+      outline: blue 2px dotted !important;
+    }
+    #projectsHeading, #contactHeading{
+      font-size: 3.25em;
+    }
+    #textBoxAbout, #textBoxMySkills{
+      width: 50%;
+      margin: 0;
+      padding: 0;
+      top: -10%;
+      height: 80%;
+    }
+    #textBoxAbout{
+      font-size: 1.25rem;
+    }
+    #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping, #skillReCaptchaAutomation, #skillIFTTTWebhook {
+      background-color: #d5d5d5;
+      color: #333;
+      border: 1px solid #000000;
+      border-radius: 20px; /* Adjust for rounded corners */
+      padding: 15px 25px;
+      display: inline-block;
+      margin: 5px;
+      font-size: 0.9em;
+      text-align: center;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    #aboutSection{
+      height: 100vh !important;
+    }
+
+
+    #projectsDisplayContainer{
+      width: 100%;
+    }
+    #projectBoxOne, #projectBoxTwo, #projectBoxThree, #projectBoxFour{
+      width: 50%;
+    }
+    #projectBoxThree, #projectBoxFour{
+      padding-top: 5%;
+    }
+    #projectOneVideo, #projectTwoVideo, #projectThreeVideo, #projectFourVideo{
+      height: 75%;
+      width: 95%;
+    }
+    #projectBoxOneHead, #projectBoxTwoHead{
+      width: 100%;
+      top: 295px;
+    }
+    #projectBoxThreeHead, #projectBoxFourHead{
+      width: 100%;
+      top: 348px;
+    }
+    #projectBoxOneDescription, #projectBoxTwoDescription{
+      top: 80%;
+      height: fit-content;
+      padding: 5px;
+    }
+    #projectBoxThreeDescription, #projectBoxFourDescription{
+      top: 92.5%;
+      height: fit-content;
+      padding: 5px;
+    }
+    #projectOneGithub, #projectTwoGithub, #projectTwoWebsite, #projectThreeGithub, #projectFourGithub, #projectFourWebsite{
+      font-size: 0.8em;
+    }
+    #projectOneGithub{
+      top: 100%;
+      width: 100%;
+      height: fit-content;
+      left: 1%;
+      transform: translateX(-1%);
+    }
+    #projectTwoGithub{
+      top: 100%;
+      width: 50%;
+      height: fit-content;
+      left: 1%;
+      transform: translateX(-1%);
+    }
+    #projectTwoWebsite{
+      top: 100%;
+      width: 50%;
+      height: fit-content;
+      left: 101%;
+      transform: translateX(-101%);
+    }
+    #projectThreeGithub{
+      top: 108%;
+      width: 100%;
+    }
+    #projectFourGithub{
+      top: 108%;
+      width: 50%;
+      height: fit-content;
+      left: 1%;
+      transform: translateX(-1%);
+    }
+    #projectFourWebsite{
+      top: 108%;
+      width: 50%;
+      height: fit-content;
+      left: 101%;
+      transform: translateX(-101%);
+    }
+
+    #leftUpperPanel{
+      width: 15%;
+
+    }
+    #leftLowerPanel{
+      width: 15%;
+
+    }
+
 }
 
 
