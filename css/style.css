@@ -676,7 +676,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 #contactHeading{
   font-family: "TikTok Font Bold", serif;
   font-size: 64px;
@@ -697,7 +696,6 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
-
 #contactCardOne {
   display: flex;
   flex-direction: row;
@@ -705,19 +703,16 @@ body {
   align-items: center; /* Center items vertically */
   width: 100%; /* Adjust this as necessary */
 }
-
 #githubContact, #githubContactUsername, #runningWritingClickMeOne {
   /* No need for 'position: relative' if we're not positioning them absolutely */
   display: flex; /* Make these flex containers as well */
   justify-content: center; /* Center the content inside */
   align-items: center; /* Useful if these had multiple lines of text or content */
 }
-
 #githubContact {
   width: 64px;
   height: auto;
 }
-
 #githubContactUsername {
   font-family: "TikTok Font Regular", serif;
   padding-left: 25px; /* Adjust or remove as necessary for centering */
@@ -748,9 +743,6 @@ body {
   left: 69%;
   position: absolute;
 }
-
-
-
 #contactCardTwo {
   display: flex;
   flex-direction: row;
@@ -759,7 +751,6 @@ body {
   margin-top: 50px;
   width: 100%; /* Adjust this as necessary */
 }
-
 #gmailContact, #gmailContactUsername, #runningWritingClickMeOne {
   /* No need for 'position: relative' if we're not positioning them absolutely */
   display: flex; /* Make these flex containers as well */
@@ -767,21 +758,16 @@ body {
   align-items: center; /* Useful if these had multiple lines of text or content */
 
 }
-
 #gmailContact {
   width: 64px;
   height: auto;
 }
-
 #gmailContactUsername {
   font-family: "TikTok Font Regular", serif;
   padding-left: 25px; /* Adjust or remove as necessary for centering */
   color: white;
   font-size: 1.25rem;
 }
-
-
-
 #contactCardThree {
   display: flex;
   flex-direction: row;
@@ -790,19 +776,16 @@ body {
   margin-top: 50px;
   width: 100%; /* Adjust this as necessary */
 }
-
 #linkedInContact, #linkedInContactUsername, #runningWritingClickMeOne {
   /* No need for 'position: relative' if we're not positioning them absolutely */
   display: flex; /* Make these flex containers as well */
   justify-content: center; /* Center the content inside */
   align-items: center; /* Useful if these had multiple lines of text or content */
 }
-
 #linkedInContact {
   width: 64px;
   height: auto;
 }
-
 #linkedInContactUsername {
   font-family: "TikTok Font Regular", serif;
   padding-left: 25px; /* Adjust or remove as necessary for centering */
@@ -3542,6 +3525,205 @@ body {
 }
 
 
+
+@media only screen and (min-width: 650px) and (max-width: 932px) and (min-height: 360px) and (max-height: 430px) and (orientation: landscape) { /* iPhone 12 Pro Landscape */
+
+  #header1, #header2, #header3{
+    top: 120px;
+  }
+  #header1, #header2, #header3, .red, #danielText{
+    font-size: 45px !important;
+  }
+  #header2{
+    padding-top: 20px;
+  }
+  #header3{
+    line-height: 65px;
+    padding-top: 20px;
+  }
+  #runningWritingHeadClose{
+    top: 5%;
+    font-size: 1.3rem;
+    left: 2%;
+  }
+  #runningWritingBodyOpen{
+    top: 7%;
+    font-size: 1.3rem;
+    left: 0;
+  }
+  #paraOne{
+    top: 16.75%;
+    font-size: 0.8rem;
+  }
+  #runningWritingPOpen{
+    top: 16.5%;
+  }
+  #runningWritingPClose{
+    top: 16.5%;
+  }
+  #runningWritingPOpen, #runningWritingPClose, #paraOne {
+    margin-left: 10%;
+    font-size: 0.8rem;
+
+  }
+  #scrollDown{
+    margin-left: -4%;
+    font-size: 0.8rem;
+
+  }
+
+
+  #projectsHeading, #contactHeading{
+    font-size: 2rem;
+    padding-top: 10% !important;
+  }
+  #aboutMeHeading, #mySkillsHeading{
+    font-size: 2rem;
+    width: 50%;
+    padding: 0;
+    padding-bottom: 5% !important;
+    padding-top: 5% !important;
+    margin: 0;
+    top: -50%;
+  }
+  #textBoxAbout, #textBoxMySkills{
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    top: -50%;
+    height: 80%;
+  }
+  #textBoxAbout{
+    font-size: 0.8rem;
+  }
+  #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping, #skillReCaptchaAutomation, #skillIFTTTWebhook {
+    background-color: #d5d5d5;
+    color: #333;
+    border: 1px solid #000000;
+    border-radius: 20px; /* Adjust for rounded corners */
+    padding: 7px 16px;
+    display: inline-block;
+    margin: 5px;
+    font-size: 0.75em;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  #hamburgerMenu500pxImage{
+    height: 2vh;
+    width: 2vw;
+  }
+
+
+  #contactSection{
+    position: relative;
+    height: 100vh;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+  }
+  #contactContainer {
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically if you want */
+    position: relative;
+    height: 91%;
+    width: 80%;
+    padding-top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #contactCardOne {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Adjust this as necessary */
+  }
+  #githubContact {
+    width: 40px;
+    height: auto;
+  }
+  #githubContactUsername {
+    font-family: "TikTok Font Regular", serif;
+    padding-left: 25px; /* Adjust or remove as necessary for centering */
+    font-size: 1.25rem;
+    color: white;
+  }
+  #runningWritingClickMeOpenOne{
+    width: fit-content;
+    margin-left: 1%; /* Adjust or remove as necessary for centering */
+    color: #a2a2a2;
+    font-family: "Running Writing", serif;
+    font-size: 26px;
+    opacity: 0.5;
+    letter-spacing: 2px;
+    top: 10px;
+    left: 31%;
+    position: absolute;
+  }
+  #runningWritingClickMeCloseOne {
+    width: fit-content;
+    margin-left: 1%; /* Adjust or remove as necessary for centering */
+    color: #a2a2a2;
+    font-family: "Running Writing", serif;
+    font-size: 26px;
+    opacity: 0.5;
+    letter-spacing: 2px;
+    top: 325px;
+    left: 69%;
+    position: absolute;
+  }
+  #contactCardTwo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    margin-top: 50px;
+    width: 100%; /* Adjust this as necessary */
+  }
+  #gmailContact, #gmailContactUsername, #runningWritingClickMeOne {
+    /* No need for 'position: relative' if we're not positioning them absolutely */
+    display: flex; /* Make these flex containers as well */
+    justify-content: center; /* Center the content inside */
+    align-items: center; /* Useful if these had multiple lines of text or content */
+
+  }
+  #gmailContact {
+    width: 40px;
+    height: auto;
+  }
+  #gmailContactUsername {
+    font-family: "TikTok Font Regular", serif;
+    padding-left: 25px; /* Adjust or remove as necessary for centering */
+    color: white;
+    font-size: 1.25rem;
+  }
+  #contactCardThree {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    margin-top: 50px;
+    width: 100%; /* Adjust this as necessary */
+  }
+  #linkedInContact, #linkedInContactUsername, #runningWritingClickMeOne {
+    /* No need for 'position: relative' if we're not positioning them absolutely */
+    display: flex; /* Make these flex containers as well */
+    justify-content: center; /* Center the content inside */
+    align-items: center; /* Useful if these had multiple lines of text or content */
+  }
+  #linkedInContact {
+    width: 40px;
+    height: auto;
+  }
+  #linkedInContactUsername {
+    font-family: "TikTok Font Regular", serif;
+    padding-left: 25px; /* Adjust or remove as necessary for centering */
+    font-size: 1.25rem;
+    color: white;
+  }
+}
 
 
 
