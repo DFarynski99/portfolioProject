@@ -411,7 +411,8 @@ body {
 
 
 
-#skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping, #skillReCaptchaAutomation, #skillIFTTTWebhook {
+#skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping,
+#skillReCaptchaAutomation, #skillIFTTTWebhook, #skillAWS, #skillFlask, #skillSessionStorageHandling, #skillSelenium, #skillAPICalls{
   background-color: #d5d5d5;
   color: #333;
   border: 1px solid #000000;
@@ -1088,7 +1089,8 @@ body {
     padding-top: 50px !important;
     padding-left: 0 !important;
   }
-  #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping, #skillReCaptchaAutomation, #skillIFTTTWebhook {
+  #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping,
+  #skillReCaptchaAutomation, #skillIFTTTWebhook, #skillAWS, #skillFlask, #skillSessionStorageHandling, #skillSelenium, #skillAPICalls{
     background-color: #d5d5d5;
     color: #333;
     border: 1px solid #000000;
@@ -1537,7 +1539,8 @@ body {
     padding-top: 50px !important;
     padding-left: 0 !important;
   }
-  #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping, #skillReCaptchaAutomation, #skillIFTTTWebhook {
+  #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping,
+  #skillReCaptchaAutomation, #skillIFTTTWebhook, #skillAWS, #skillFlask, #skillSessionStorageHandling, #skillSelenium, #skillAPICalls{
     background-color: #d5d5d5;
     color: #333;
     border: 1px solid #000000;
@@ -1814,7 +1817,8 @@ body {
   #textBoxAbout{
     font-size: 0.9rem;
   }
-  #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping, #skillReCaptchaAutomation, #skillIFTTTWebhook {
+  #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping,
+  #skillReCaptchaAutomation, #skillIFTTTWebhook, #skillAWS, #skillFlask, #skillSessionStorageHandling, #skillSelenium, #skillAPICalls{
     background-color: #d5d5d5;
     color: #333;
     border: 1px solid #000000;
@@ -2053,7 +2057,8 @@ body {
   #textBoxAbout{
     font-size: 1rem;
   }
-  #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping, #skillReCaptchaAutomation, #skillIFTTTWebhook {
+  #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping,
+  #skillReCaptchaAutomation, #skillIFTTTWebhook, #skillAWS, #skillFlask, #skillSessionStorageHandling, #skillSelenium, #skillAPICalls{
     background-color: #d5d5d5;
     color: #333;
     border: 1px solid #000000;
@@ -2296,7 +2301,8 @@ body {
   #textBoxAbout{
     font-size: 1rem;
   }
-  #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping, #skillReCaptchaAutomation, #skillIFTTTWebhook {
+  #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping,
+  #skillReCaptchaAutomation, #skillIFTTTWebhook, #skillAWS, #skillFlask, #skillSessionStorageHandling, #skillSelenium, #skillAPICalls{
     background-color: #d5d5d5;
     color: #333;
     border: 1px solid #000000;
@@ -2545,7 +2551,8 @@ body {
   #textBoxAbout{
     font-size: 1.25rem;
   }
-  #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping, #skillReCaptchaAutomation, #skillIFTTTWebhook {
+  #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping,
+  #skillReCaptchaAutomation, #skillIFTTTWebhook, #skillAWS, #skillFlask, #skillSessionStorageHandling, #skillSelenium, #skillAPICalls{
     background-color: #d5d5d5;
     color: #333;
     border: 1px solid #000000;
@@ -2718,7 +2725,8 @@ body {
     #textBoxAbout{
       font-size: 1.25rem;
     }
-    #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping, #skillReCaptchaAutomation, #skillIFTTTWebhook {
+  #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping,
+  #skillReCaptchaAutomation, #skillIFTTTWebhook, #skillAWS, #skillFlask, #skillSessionStorageHandling, #skillSelenium, #skillAPICalls{
       background-color: #d5d5d5;
       color: #333;
       border: 1px solid #000000;
@@ -3007,7 +3015,8 @@ body {
   #aboutMeHeading, #mySkillsHeading, #projectsHeading, #contactHeading {
     font-size: 4rem;
   }
-  #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping, #skillReCaptchaAutomation, #skillIFTTTWebhook {
+  #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping,
+  #skillReCaptchaAutomation, #skillIFTTTWebhook, #skillAWS, #skillFlask, #skillSessionStorageHandling, #skillSelenium, #skillAPICalls{
     background-color: #d5d5d5;
     color: #333;
     border: 1px solid #000000;
@@ -3112,7 +3121,8 @@ body {
   #aboutMeHeading, #mySkillsHeading, #projectsHeading, #contactHeading {
     font-size: 6rem;
   }
-  #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping, #skillReCaptchaAutomation, #skillIFTTTWebhook {
+  #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping,
+  #skillReCaptchaAutomation, #skillIFTTTWebhook, #skillAWS, #skillFlask, #skillSessionStorageHandling, #skillSelenium, #skillAPICalls{
     background-color: #d5d5d5;
     color: #333;
     border: 1px solid #000000;
@@ -3241,7 +3251,8 @@ body {
   #aboutMeHeading, #mySkillsHeading, #projectsHeading, #contactHeading {
     font-size: 6rem;
   }
-  #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping, #skillReCaptchaAutomation, #skillIFTTTWebhook {
+  #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping,
+  #skillReCaptchaAutomation, #skillIFTTTWebhook, #skillAWS, #skillFlask, #skillSessionStorageHandling, #skillSelenium, #skillAPICalls{
     background-color: #d5d5d5;
     color: #333;
     border: 1px solid #000000;
@@ -3419,7 +3430,8 @@ body {
   #aboutMeHeading, #mySkillsHeading, #projectsHeading, #contactHeading {
     font-size: 8.5rem;
   }
-  #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping, #skillReCaptchaAutomation, #skillIFTTTWebhook {
+  #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping,
+  #skillReCaptchaAutomation, #skillIFTTTWebhook, #skillAWS, #skillFlask, #skillSessionStorageHandling, #skillSelenium, #skillAPICalls{
     background-color: #d5d5d5;
     color: #333;
     border: 1px solid #000000;
@@ -3596,7 +3608,8 @@ body {
   #textBoxAbout{
     font-size: 0.8rem;
   }
-  #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping, #skillReCaptchaAutomation, #skillIFTTTWebhook {
+  #skillHTML, #skillCSS, #skillJS, #skillPython, #skillGithub, #skillBasicSQL, #skillJava, #skillFigma, #skillWebScraping,
+  #skillReCaptchaAutomation, #skillIFTTTWebhook, #skillAWS, #skillFlask, #skillSessionStorageHandling, #skillSelenium, #skillAPICalls{
     background-color: #d5d5d5;
     color: #333;
     border: 1px solid #000000;
