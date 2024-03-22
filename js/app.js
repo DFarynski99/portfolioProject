@@ -94,3 +94,42 @@ document.getElementById('projectsButtonLeftPanelHidden').addEventListener("click
 document.getElementById('contactButtonLeftPanelHidden').addEventListener("click", function(){
   document.getElementById('contactSection').scrollIntoView({behavior: "smooth"})
 })
+
+
+document.getElementById('loadMoreButton').addEventListener('click', function() {
+  var cardsContainer = document.getElementById('projectsSection'); // Get the cards container
+
+  // Get the viewport dimensions
+  var viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+  var viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
+  // Convert the current height from vh to pixels for accurate calculations
+  var currentHeightInVh = 120; // This is the height you've set in CSS using vh
+  var currentHeightInPx = (currentHeightInVh / 100) * viewportHeight; // Convert vh to px
+
+  // Define the multiplier based on viewport width (like CSS media queries)
+  var multiplier;
+  if (viewportWidth < 600) { // For small screens
+    multiplier = 1.2;
+  } else if (viewportWidth >= 600 && viewportWidth < 1024) { // For medium screens
+    multiplier = 1;
+  } else { // For large screens
+    multiplier = 1.5;
+  }
+
+  // Calculate new height based on the dynamic multiplier
+  var newHeightInPx = currentHeightInPx * multiplier;
+
+  // Apply the new height in pixels
+  cardsContainer.style.height = newHeightInPx + 'px';
+
+  // Show projectBoxFive and hide the loadMoreButton as before
+  var cardFive = document.getElementById('projectBoxFive');
+  cardFive.style.display = 'block';
+
+  var loadMoreButton = document.getElementById('loadMoreButton');
+  loadMoreButton.style.display = 'none';
+});
+
+
+

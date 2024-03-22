@@ -434,6 +434,20 @@ body {
   display: flex;
   flex-direction: column;
 }
+#loadMoreButton{
+  width: 200px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2px;
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  font-size: 1rem;
+  font-family: "TikTok Font Regular", serif;
+  display: block;
+}
 
 #projectsSectionContainer {
   position: relative;
@@ -470,7 +484,7 @@ body {
   text-align: center;
   font-size: 16px;
   position: relative;
-  height: 48%;
+  height: 390px;
   width: 45%;
 }
 #projectBoxOneHead{
@@ -515,7 +529,7 @@ body {
   text-align: center;
   font-size: 16px;
   position: relative;
-  height: 48%;
+  height: 390px;
   width: 45%;
   margin-left: auto; /* Push the box to the right */
 }
@@ -568,11 +582,11 @@ body {
   color: white;
   text-align: center;
   font-size: 16px;
-  position: relative;
-  height: 48%;
+  position: absolute;
+  height: 390px;
   width: 45%;
+  top: 400px;
   margin-top: 30px;
-
 }
 #projectBoxThreeHead{
   position: absolute;
@@ -619,8 +633,10 @@ body {
   color: white;
   text-align: center;
   font-size: 16px;
-  position: relative;
-  height: 48%;
+  position: absolute;
+  height: 390px;
+  right: 0;
+  top: 400px;
   width: 45%;
   margin-left: auto; /* Push the box to the right */
   margin-top: 30px;
@@ -665,6 +681,55 @@ body {
   font-family: "TikTok Font Regular", serif;
   left: 60%;
   transform: translateX(-60%);
+}
+
+#projectBoxFive{
+  font-family: "TikTok Font Bold", serif;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  position: absolute;
+  height: 390px;
+  top: 830px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 45%;
+  margin-left: auto; /* Push the box to the right */
+  margin-top: 30px;
+  display: none;
+}
+#projectBoxFiveHead{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 290px;
+  width: 100%;
+}
+#projectFiveVideo{
+  width: 90%;
+  height: 68%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#projectBoxFiveDescription{
+  position: absolute;
+  font-size: 14px;
+  font-family: "TikTok Font Regular", serif;
+  text-align: center;
+  width: 100%;
+  height: 23%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 80%;
+}
+#projectFiveGithub{
+  position: absolute;
+  top: 95%;
+  color: #0000EE;
+  font-family: "TikTok Font Regular", serif;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 
@@ -851,15 +916,6 @@ body {
 
 
 @media only screen and (max-width: 334px) {
-
-  #projectBoxOne, #projectBoxTwo {
-    height: 37.5%;
-  }
-  #projectBoxThree, #projectBoxFour{
-    height: 37.5%;
-  }
-  #projectsSection{
-  }
 
   html{
     width: 86vw;
@@ -1110,7 +1166,7 @@ body {
   #projectsSection{
     width: 93%;
     left: 59%;
-    height: 150vh !important;
+    height: 100vh;
   }
   #projectsHeading{
     font-size: 2rem;
@@ -1119,53 +1175,74 @@ body {
   #projectsDisplayContainer{
     width: 100%;
   }
-  #projectBoxOne, #projectBoxTwo, #projectBoxThree, #projectBoxFour{
-    width: 50%;
+
+  #loadMoreButton{
+    width: 160px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2px;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    font-size: 1rem;
+    font-family: "TikTok Font Regular", serif;
   }
-  #projectBoxOne, #projectBoxTwo{
+
+  #projectBoxFive{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45%;
+    margin-left: auto; /* Push the box to the right */
+    margin-top: 30px;
+    display: none;
+  }
+
+
+
+  #projectBoxThree, #projectBoxFour{
+    position: absolute;
+    top: 150px;
+  }
+  #projectBoxFive{
+    position: absolute;
+    top: 650px;
+  }
+
+
+  #projectBoxOne, #projectBoxTwo, #projectBoxThree, #projectBoxFour, #projectBoxFive{
+    width: 50%;
     margin-bottom: -100px;
   }
-  #projectOneVideo, #projectTwoVideo, #projectThreeVideo, #projectFourVideo{
+  #projectOneVideo, #projectTwoVideo, #projectThreeVideo, #projectFourVideo, #projectFiveVideo{
     height: 50%;
     width: 95%;
   }
-  #projectBoxOneHead, #projectBoxTwoHead{
+  #projectBoxOneHead, #projectBoxTwoHead, #projectBoxThreeHead, #projectBoxFourHead, #projectBoxFiveHead{
     top: 51%;
     font-size: 0.7em;
   }
-  #projectBoxThreeHead, #projectBoxFourHead{
-    top: 51%;
-    font-size: 0.7em;
-  }
-  #projectBoxOneDescription, #projectBoxTwoDescription{
+  #projectBoxOneDescription, #projectBoxTwoDescription, #projectBoxThreeDescription, #projectBoxFourDescription, #projectBoxFiveDescription{
     top: 60%;
     font-size: 0.65em;
     height: fit-content;
   }
-  #projectBoxThreeDescription, #projectBoxFourDescription{
-    top: 60%;
-    font-size: 0.65em;
-    height: fit-content;
+  #projectBoxOne, #projectBoxTwo, #projectBoxThree, #projectBoxFour, #projectBoxFive {
+    height: 300px;
+  }
 
-  }
   #projectOneGithub{
     width: 100%;
     height: fit-content;
     font-size: 0.70em;
-    top: 115%;
+    position: absolute;
+    bottom: 0;
   }
   #projectTwoGithub{
     width: 50%;
-    top: 115%;
-    height: fit-content;
-    font-size: 0.70em;
-    position: absolute;
-    left: 1%;
-    transform: translateX(-1%);
-  }
-  #projectThreeGithub{
-    width: 100%;
-    top: 106%;
+    bottom: 0;
     height: fit-content;
     font-size: 0.70em;
     position: absolute;
@@ -1174,16 +1251,25 @@ body {
   }
   #projectTwoWebsite{
     width: 50%;
-    top: 115%;
+    bottom: 0;
     height: fit-content;
     font-size: 0.70em;
     position: absolute;
-    left: 101%;
-    transform: translateX(-101%);
+    left: 100%;
+    transform: translateX(-100%);
+  }
+  #projectThreeGithub{
+    width: 100%;
+    bottom: 0;
+    height: fit-content;
+    font-size: 0.70em;
+    position: absolute;
+    left: 1%;
+    transform: translateX(-1%);
   }
   #projectFourGithub{
     width: 50%;
-    top: 106%;
+    bottom: 0;
     height: fit-content;
     font-size: 0.70em;
     position: absolute;
@@ -1192,7 +1278,7 @@ body {
   }
   #projectFourWebsite{
     width: 50%;
-    top: 106%;
+    bottom: 0;
     height: fit-content;
     font-size: 0.70em;
     position: absolute;
@@ -1201,6 +1287,15 @@ body {
   }
   #projectBoxThree, #projectBoxFour{
     margin-top: 75% !important;
+  }
+  #projectFiveGithub{
+    width: 100%;
+    bottom: 0;
+    height: fit-content;
+    font-size: 0.70em;
+    position: absolute;
+    left: 1%;
+    transform: translateX(-1%);
   }
 
 
@@ -1308,14 +1403,6 @@ body {
 
 @media only screen and (min-width: 335px) and (max-width: 500px) {
 
-  #projectBoxOne, #projectBoxTwo {
-    height: 37.5%;
-  }
-  #projectBoxThree, #projectBoxFour{
-    height: 37.5%;
-  }
-  #projectsSection{
-  }
 
   html{
     width: 86vw;
@@ -1560,7 +1647,7 @@ body {
   #projectsSection{
     width: 93%;
     left: 59%;
-    height: 150vh !important;
+    height: 125vh;
   }
   #projectsHeading{
     font-size: 2rem;
@@ -1569,44 +1656,60 @@ body {
   #projectsDisplayContainer{
     width: 100%;
   }
-  #projectBoxOne, #projectBoxTwo, #projectBoxThree, #projectBoxFour{
+
+  #loadMoreButton{
+    width: 160px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2px;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    font-size: 1rem;
+    font-family: "TikTok Font Regular", serif;
+  }
+
+
+  #projectBoxFive{
+    top: 830px !important;
+    position: absolute;
+    width: 50% !important;
+    height: 390px !important;
+  }
+
+  #projectBoxOne, #projectBoxTwo, #projectBoxThree, #projectBoxFour, #projectBoxFive{
     width: 50%;
   }
   #projectBoxOne, #projectBoxTwo{
     margin-bottom: -100px;
   }
-  #projectOneVideo, #projectTwoVideo, #projectThreeVideo, #projectFourVideo{
+  #projectOneVideo, #projectTwoVideo, #projectThreeVideo, #projectFourVideo, #projectFiveVideo{
     height: 50%;
     width: 95%;
+    top: 0;
   }
-  #projectBoxOneHead, #projectBoxTwoHead{
+  #projectBoxOneHead, #projectBoxTwoHead, #projectBoxThreeHead, #projectBoxFourHead, #projectBoxFiveHead{
     top: 51%;
     font-size: 0.8em;
   }
-  #projectBoxThreeHead, #projectBoxFourHead{
-    top: 60%;
-    font-size: 0.8em;
-  }
-  #projectBoxOneDescription, #projectBoxTwoDescription{
+
+  #projectBoxOneDescription, #projectBoxTwoDescription, #projectBoxThreeDescription, #projectBoxFourDescription, #projectBoxFiveDescription{
     top: 62%;
     font-size: 0.70em;
     height: fit-content;
   }
-  #projectBoxThreeDescription, #projectBoxFourDescription{
-    top: 71%;
-    font-size: 0.70em;
-    height: fit-content;
 
-  }
   #projectOneGithub{
     width: 100%;
     height: fit-content;
     font-size: 0.70em;
-    top: 107%;
+    bottom: 0;
   }
   #projectTwoGithub{
     width: 50%;
-    top: 107%;
+    bottom: 0;
     height: fit-content;
     font-size: 0.70em;
     position: absolute;
@@ -1615,7 +1718,7 @@ body {
   }
   #projectThreeGithub{
     width: 100%;
-    top: 111%;
+    bottom: 0;
     height: fit-content;
     font-size: 0.70em;
     position: absolute;
@@ -1624,7 +1727,7 @@ body {
   }
   #projectTwoWebsite{
     width: 50%;
-    top: 107%;
+    bottom: 0;
     height: fit-content;
     font-size: 0.70em;
     position: absolute;
@@ -1633,7 +1736,7 @@ body {
   }
   #projectFourGithub{
     width: 50%;
-    top: 111%;
+    bottom: 0;
     height: fit-content;
     font-size: 0.70em;
     position: absolute;
@@ -1642,12 +1745,21 @@ body {
   }
   #projectFourWebsite{
     width: 50%;
-    top: 111%;
+    bottom: 0;
     height: fit-content;
     font-size: 0.70em;
     position: absolute;
     left: 101%;
     transform: translateX(-101%);
+  }
+  #projectFiveGithub{
+    width: 50%;
+    bottom: 0;
+    height: fit-content;
+    font-size: 0.70em;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
   #projectBoxThree, #projectBoxFour{
     padding-top: 25px;
@@ -1758,6 +1870,10 @@ body {
 
 @media only screen and (min-width: 501px) and (max-width: 768px) {
 
+  #projectsSection{
+    height: 100vh;
+  }
+
   #header1, #header2, #header3{
     top: 150px;
   }
@@ -1835,27 +1951,27 @@ body {
   #projectsDisplayContainer{
     width: 100%;
   }
-  #projectBoxOne, #projectBoxTwo, #projectBoxThree, #projectBoxFour{
+  #projectBoxOne, #projectBoxTwo, #projectBoxThree, #projectBoxFour, #projectBoxFive{
     width: 50%;
   }
   #projectBoxOne, #projectBoxTwo{
     margin-bottom: 75px;
   }
-  #projectOneVideo, #projectTwoVideo, #projectThreeVideo, #projectFourVideo{
+  #projectOneVideo, #projectTwoVideo, #projectThreeVideo, #projectFourVideo, #projectFiveVideo{
     height: 50%;
     width: 95%;
   }
-  #projectBoxOneHead, #projectBoxTwoHead, #projectBoxThreeHead, #projectBoxFourHead{
+  #projectBoxOneHead, #projectBoxTwoHead, #projectBoxThreeHead, #projectBoxFourHead, #projectBoxFiveHead{
     top: 200px;
     width: 100%;
     font-size: 0.8em;
   }
-  #projectBoxOneDescription, #projectBoxTwoDescription, #projectBoxThreeDescription, #projectBoxFourDescription{
+  #projectBoxOneDescription, #projectBoxTwoDescription, #projectBoxThreeDescription, #projectBoxFourDescription, #projectBoxFiveDescription{
     top: 57.5%;
     font-size: 0.70em;
     height: fit-content;
   }
-  #projectOneGithub, #projectTwoGithub, #projectTwoWebsite, #projectThreeGithub, #projectFourGithub, #projectFourWebsite{
+  #projectOneGithub, #projectTwoGithub, #projectTwoWebsite, #projectThreeGithub, #projectFourGithub, #projectFourWebsite, #projectFiveGithub{
     font-size: 0.8em;
   }
   #projectOneGithub{
@@ -1897,7 +2013,10 @@ body {
     left: 101%;
     transform: translateX(-101%);
   }
-
+  #projectFiveGithub{
+    top: 78%;
+    width: 100%;
+  }
 
   #leftUpperPanel, #leftLowerPanel, #letter, #text{
     display: none;
@@ -2078,25 +2197,25 @@ body {
   #projectsDisplayContainer{
     width: 100%;
   }
-  #projectBoxOne, #projectBoxTwo, #projectBoxThree, #projectBoxFour{
+  #projectBoxOne, #projectBoxTwo, #projectBoxThree, #projectBoxFour, #projectBoxFive{
     width: 50%;
   }
-  #projectOneVideo, #projectTwoVideo, #projectThreeVideo, #projectFourVideo{
+  #projectOneVideo, #projectTwoVideo, #projectThreeVideo, #projectFourVideo, #projectFiveVideo{
     height: 50%;
     width: 95%;
   }
-  #projectBoxOneHead, #projectBoxTwoHead, #projectBoxThreeHead, #projectBoxFourHead{
+  #projectBoxOneHead, #projectBoxTwoHead, #projectBoxThreeHead, #projectBoxFourHead, #projectBoxFiveHead{
     top: 200px;
     width: 100%;
     font-size: 0.8em;
   }
-  #projectBoxOneDescription, #projectBoxTwoDescription, #projectBoxThreeDescription, #projectBoxFourDescription{
+  #projectBoxOneDescription, #projectBoxTwoDescription, #projectBoxThreeDescription, #projectBoxFourDescription, #projectBoxFiveDescription{
     top: 57.5%;
     font-size: 0.70em;
     height: fit-content;
 
   }
-  #projectOneGithub, #projectTwoGithub, #projectTwoWebsite, #projectThreeGithub, #projectFourGithub, #projectFourWebsite{
+  #projectOneGithub, #projectTwoGithub, #projectTwoWebsite, #projectThreeGithub, #projectFourGithub, #projectFourWebsite, #projectFiveGithub {
     font-size: 0.8em;
   }
   #projectOneGithub{
@@ -2137,6 +2256,10 @@ body {
     height: fit-content;
     left: 101%;
     transform: translateX(-101%);
+  }
+  #projectFiveGithub{
+    top: 70%;
+    width: 100%;
   }
 
 
@@ -2318,29 +2441,31 @@ body {
     height: 100vh !important;
   }
 
-
   #projectsDisplayContainer{
     width: 100%;
   }
-  #projectBoxOne, #projectBoxTwo, #projectBoxThree, #projectBoxFour{
+  #projectBoxOne, #projectBoxTwo{
+    top: 0;
+  }
+  #projectBoxOne, #projectBoxTwo, #projectBoxThree, #projectBoxFour, #projectBoxFive{
     width: 50%;
   }
-  #projectOneVideo, #projectTwoVideo, #projectThreeVideo, #projectFourVideo{
+  #projectOneVideo, #projectTwoVideo, #projectThreeVideo, #projectFourVideo, #projectFiveVideo{
     height: 50%;
     width: 95%;
   }
-  #projectBoxOneHead, #projectBoxTwoHead, #projectBoxThreeHead, #projectBoxFourHead{
+  #projectBoxOneHead, #projectBoxTwoHead, #projectBoxThreeHead, #projectBoxFourHead, #projectBoxFiveHead{
     top: 200px;
     width: 100%;
     font-size: 0.8em;
   }
-  #projectBoxOneDescription, #projectBoxTwoDescription, #projectBoxThreeDescription, #projectBoxFourDescription{
+  #projectBoxOneDescription, #projectBoxTwoDescription, #projectBoxThreeDescription, #projectBoxFourDescription, #projectBoxFiveDescription{
     top: 57.5%;
     font-size: 0.70em;
     height: fit-content;
 
   }
-  #projectOneGithub, #projectTwoGithub, #projectTwoWebsite, #projectThreeGithub, #projectFourGithub, #projectFourWebsite{
+  #projectOneGithub, #projectTwoGithub, #projectTwoWebsite, #projectThreeGithub, #projectFourGithub, #projectFourWebsite, #projectFiveGithub{
     font-size: 0.8em;
   }
   #projectOneGithub{
@@ -2381,6 +2506,10 @@ body {
     height: fit-content;
     left: 101%;
     transform: translateX(-101%);
+  }
+  #projectFiveGithub{
+    top: 70%;
+    width: 100%;
   }
 
 
@@ -2569,16 +2698,19 @@ body {
   }
 
 
+  #projectBoxFive{
+    top: 930px;
+  }
   #projectsDisplayContainer{
     width: 100%;
   }
-  #projectBoxOne, #projectBoxTwo, #projectBoxThree, #projectBoxFour{
+  #projectBoxOne, #projectBoxTwo, #projectBoxThree, #projectBoxFour, #projectBoxFive {
     width: 50%;
   }
   #projectBoxThree, #projectBoxFour{
     padding-top: 5%;
   }
-  #projectOneVideo, #projectTwoVideo, #projectThreeVideo, #projectFourVideo{
+  #projectOneVideo, #projectTwoVideo, #projectThreeVideo, #projectFourVideo, #projectFiveVideo{
     height: 75%;
     width: 95%;
   }
@@ -2596,7 +2728,7 @@ body {
     padding: 5px;
   }
   #projectBoxThreeDescription, #projectBoxFourDescription{
-    top: 91%;
+    top: 92%;
     height: fit-content;
     padding: 5px;
   }
@@ -2746,13 +2878,16 @@ body {
     #projectsDisplayContainer{
       width: 100%;
     }
-    #projectBoxOne, #projectBoxTwo, #projectBoxThree, #projectBoxFour{
+    #projectBoxFive{
+      top: 900px;
+    }
+    #projectBoxOne, #projectBoxTwo, #projectBoxThree, #projectBoxFour, #projectBoxFive{
       width: 50%;
     }
     #projectBoxThree, #projectBoxFour{
       padding-top: 5%;
     }
-    #projectOneVideo, #projectTwoVideo, #projectThreeVideo, #projectFourVideo{
+    #projectOneVideo, #projectTwoVideo, #projectThreeVideo, #projectFourVideo, #projectFiveVideo{
       height: 75%;
       width: 95%;
     }
@@ -3029,24 +3164,24 @@ body {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   }
 
-  #projectOneVideo, #projectTwoVideo, #projectThreeVideo, #projectFourVideo{
+  #projectOneVideo, #projectTwoVideo, #projectThreeVideo, #projectFourVideo, #projectFiveVideo{
     height: 69%;
     width: 100%;
   }
-  #projectBoxOneHead, #projectBoxTwoHead, #projectBoxThreeHead, #projectBoxFourHead{
+  #projectBoxOneHead, #projectBoxTwoHead, #projectBoxThreeHead, #projectBoxFourHead, #projectBoxFiveHead{
     width: 100%;
     top: 67.5%;
     font-size: 1.6em;
 
   }
-  #projectBoxOneDescription, #projectBoxTwoDescription, #projectBoxThreeDescription, #projectBoxFourDescription{
+  #projectBoxOneDescription, #projectBoxTwoDescription, #projectBoxThreeDescription, #projectBoxFourDescription, #projectBoxFiveDescription{
     top: 72.5%;
     height: fit-content;
     padding: 5px;
     font-size: 1.4em;
 
   }
-  #projectOneGithub, #projectTwoGithub, #projectTwoWebsite, #projectThreeGithub, #projectFourGithub, #projectFourWebsite{
+  #projectOneGithub, #projectTwoGithub, #projectTwoWebsite, #projectThreeGithub, #projectFourGithub, #projectFourWebsite, #projectFiveGithub{
     font-size: 1.4em;
   }
   #projectOneGithub{
@@ -3135,7 +3270,9 @@ body {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   }
 
-
+  #projectBoxFive{
+    top: 950px;
+  }
   #projectBoxOneHead, #projectBoxTwoHead, #projectBoxThreeHead, #projectBoxFourHead {
     font-size: 1.75rem;
     top: 70%;
