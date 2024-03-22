@@ -112,9 +112,11 @@ document.getElementById('loadMoreButton').addEventListener('click', function() {
   if (viewportWidth < 600) { // For small screens
     multiplier = 1.4;
   } else if (viewportWidth >= 600 && viewportWidth < 1024) { // For medium screens
-    multiplier = 1;
-  } else { // For large screens
-    multiplier = 1.5;
+    multiplier = 1.45;
+  } else if (viewportWidth >= 1025 && viewportWidth < 1920) { // For medium screens
+    multiplier = 1.85;
+  } else {
+    multiplier = 1.50;
   }
 
   // Calculate new height based on the dynamic multiplier
