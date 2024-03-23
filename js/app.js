@@ -110,7 +110,7 @@ document.getElementById('loadMoreButton').addEventListener('click', function() {
   // Define the multiplier based on viewport width (like CSS media queries)
   var multiplier;
   if (viewportWidth < 600) { // For small screens
-    multiplier = 1.6;
+    multiplier = 1.7;
   } else if (viewportWidth >= 600 && viewportWidth < 1024) { // For medium screens
     multiplier = 1.45;
   } else if (viewportWidth >= 1025 && viewportWidth < 1920) { // For medium screens
