@@ -1648,8 +1648,8 @@ body {
   #projectsSection{
     width: 93%;
     left: 59%;
-    height: 125vh;
-    outline: #0000EE 2px dotted;
+    height: 1350px;
+    outline: pink 2px dotted;
   }
   #projectsHeading{
     font-size: 2rem;
