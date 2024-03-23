@@ -433,6 +433,7 @@ body {
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
+  margin-bottom: 20% !important;
 }
 #loadMoreButton{
   width: 200px;
