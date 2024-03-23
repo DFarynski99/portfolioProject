@@ -444,6 +444,7 @@ body {
   bottom: 2px;
   background-color: transparent;
   border-color: white;
+  border-style: solid;
   color: white;
   font-size: 1rem;
   font-family: "TikTok Font Regular", serif;
@@ -1649,7 +1650,6 @@ body {
     width: 93%;
     left: 59%;
     height: 1350px;
-    outline: pink 2px dotted;
   }
   #projectsHeading{
     font-size: 2rem;
@@ -1672,7 +1672,6 @@ body {
     font-size: 1rem;
     font-family: "TikTok Font Regular", serif;
     margin-bottom: 5%;
-    outline: red 2px dotted;
   }
 
 
@@ -1775,7 +1774,6 @@ body {
     width: 93%;
     left: 59%;
     height: 110vh;
-    outline: yellow 2px dotted;
   }
   #contactContainer{
     width: 100%;
